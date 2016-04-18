@@ -1,0 +1,79 @@
+/* Footer styles
+   ========================================================================== */
+
+.bottom {
+  background: $gray-dark;
+  font-size: 80%;
+  font-weight: bold;
+
+  .pane-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    overflow: visible;
+    text-align: left;
+
+    p {
+      a {
+        color: $white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+
+      em {
+        font-weight: bold;
+        display: inline-block;
+        margin: 0 8px;
+        font-size: 80%;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+}
+
+.footer {
+  padding-bottom: 40px;
+
+  .panel-pane {
+    position: relative;
+
+    &:before {
+      background: $white;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 10px;
+      position: absolute;
+      width: 1px;
+    }
+  }
+
+  .pane-title {
+    border-bottom: none;
+    font-size: 100%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .pane-content {
+    margin-left: 20px;
+  }
+
+  .menu {
+    li {
+      &:before {
+        display: none;
+      }
+
+      a {
+        font-size: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+}

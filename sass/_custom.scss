@@ -1,0 +1,130 @@
+/* Standard color definitions
+   ========================================================================== */
+
+$white:                          #fff !default;
+$black:                          #000 !default;
+$gray:                           #d5d5d5 !default;
+$gray-light:                     #eee;
+$gray-dark:                      #2f2f2f;
+$red:                            #a32e10;
+$green:                          #c7d650;
+$yellow:                         #f0cb28;
+$blue:                           #4565ae;
+$orange:                         #ec6608;
+
+$base-font-family:               Helvetica, "Helvetica Neue", Arial, sans-serif;
+
+$zen-columns: 12 !global;
+$zen-gutters: 20px !global;
+
+body {
+  background: $gray-light;
+  font-family: $base-font-family;
+}
+
+.pane-menu-title {
+  h2 {
+    border-bottom: 2px solid #6d85be;
+    color: $blue;
+    font-family: $base-font-family;
+    font-size: 200%;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+}
+
+.default-layout .layout-wrapper {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #4565ae;
+  font-weight: bold;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #4565ae;
+  font-weight: bold;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #4565ae;
+  font-weight: bold;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #4565ae;
+  font-weight: bold;
+}
+
+.sub-menu-title {
+  color: #4b4b4b;
+  font-family: $base-font-family;
+  font-weight: bold;
+  border-bottom: 2px solid #8e8e8e;
+  font-size: 130%;
+  line-height: 45px;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+}
+
+.sub-menu {
+  padding-top: 20px;
+
+  > li {
+    a {
+      color: #00a1e3;
+      font-weight: bold;
+      padding-left: 22px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &.active {
+        color: $gray-dark;
+        font-family: $base-font-family;
+        font-weight: bold;
+      }
+    }
+  }
+
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.page-title {
+  border-bottom: 2px solid #6d85be;
+  color: $blue;
+  font-family: $base-font-family;
+  font-size: 200%;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.label a,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a,
+.subjects .subject a,
+.news-list .news-label a,
+.super-heading .field-name-field-ding-news-library .field-item a {
+  background: #ab398e;
+  border-radius: 0;
+  font-size: 85%;
+
+  &:hover {
+    background: #a03585;
+  }
+}
+
+.label,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a,
+.subjects .subject,
+.news-list .news-label,
+.super-heading .field-name-field-ding-news-library .field-item {
+  text-shadow: none;
+}

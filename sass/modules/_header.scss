@@ -1,0 +1,122 @@
+/* Header styles
+   ========================================================================== */
+
+.topbar-menu {
+  .menu-item {
+    color: $green;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 5px 18px;
+    text-shadow: none;
+
+    &.active,
+    &:hover {
+      background: $green;
+      color: $gray-dark;
+    }
+  }
+}
+
+.search label,
+.search-field-in-content label,
+.user label {
+  color: $gray-dark;
+}
+
+.site-name {
+  display: none;
+}
+
+.secondary-menu {
+  .menu-item {
+    color: $green;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 5px 18px;
+
+    &:hover {
+      background: $green;
+      color: $gray-dark;
+      text-decoration: none;
+    }
+  }
+}
+
+.secondary-menu-wrapper,
+.topbar-menu {
+  float: right;
+  margin: 106px 0 0 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: auto;
+}
+
+.logo {
+  margin: 35px 0 25px;
+}
+
+.navigation-wrapper {
+  height: 96px;
+}
+
+.header-wrapper .search,
+.header-wrapper .search-field-in-content {
+  padding-bottom: 36px;
+}
+
+.search .form-text,
+.search-field-in-content .form-text,
+.user .form-text,
+.search .form-submit,
+.search-field-in-content .form-submit,
+.user .form-submit {
+  border-radius: 0;
+}
+
+.search .form-submit {
+  background: #00a1e0;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.user .form-submit {
+  background: #00a1e0;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.search [class^="icon-"],
+.search-field-in-content [class^="icon-"],
+.user [class^="icon-"],
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  color: #4565ae;
+  font-weight: bold;
+}
+
+.main-menu-wrapper {
+  @include zen-grid-item(12, 1);
+
+  .main-menu {
+    li {
+      display: inline-block;
+      width: calc(100% / 6);
+    }
+    .menu-item {
+      color: $white;
+    }
+  }
+}
+
+.topbar-menu .menu-item {
+  font-family: $base-font-family;
+}

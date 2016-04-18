@@ -1,0 +1,82 @@
+/* News styles
+   ========================================================================== */
+
+.news-list {
+  .news-list-item:nth-child(odd),
+  .news-list-item:nth-child(even) {
+    background: $white;
+  }
+
+  .news-link {
+    float: none;
+    font-size: 90%;
+    font-weight: bold;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .news-date,
+  .news-author {
+    color: $gray-dark;
+    font-size: 90%;
+    font-weight: bold;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .news-list-content {
+    font-size: 110%;
+  }
+
+  .news-heading {
+    font-size: 180%;
+    font-family: $base-font-family;
+    font-weight: bold;
+
+    a {
+      color: #2f2f2f;
+      font-weight: bold;
+    }
+  }
+}
+
+.pane-ding-news-ding-news-list {
+  .pane-title {
+    border-top: 2px solid #6d85be;
+    color: $blue;
+    font-family: $base-font-family;
+    font-weight: bold;
+    font-size: 180%;
+    padding-bottom: 13px;
+    padding-top: 25px;
+  }
+}
+
+.news {
+  .page-lead {
+    font-size: 110%;
+    font-family: $base-font-family;
+    font-weight: bold;
+  }
+
+  .news-content {
+    font-size: 110%;
+  }
+
+  .news-footer {
+    font-size: 90%;
+    font-weight: bold;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .super-heading .label {
+    font-size: 85%;
+  }
+}
