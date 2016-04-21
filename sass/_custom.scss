@@ -6,6 +6,7 @@ $black:                          #000 !default;
 $gray:                           #d5d5d5 !default;
 $gray-light:                     #eee;
 $gray-dark:                      #2f2f2f;
+$gray-darker:                    #4b4b4b;
 $red:                            #a32e10;
 $green:                          #c7d650;
 $yellow:                         #f0cb28;
@@ -127,4 +128,8 @@ body {
 .news-list .news-label,
 .super-heading .field-name-field-ding-news-library .field-item {
   text-shadow: none;
+}
+
+label {
+  font-family: $base-font-family;
 }

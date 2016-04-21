@@ -1,0 +1,209 @@
+/* Libraries styles
+   ========================================================================== */
+
+.pane-ding-library-ding-library-libraries-list {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.library-list .views-row:nth-child(odd),
+.library-list .views-row:nth-child(even) {
+  background: $white;
+}
+
+.library-list {
+  .library-title {
+    border: none;
+    font-family: $base-font-family;
+    font-size: 180%;
+    margin-top: 15px;
+    padding-bottom: 10px;
+
+    a {
+      color: $gray-dark;
+      font-weight: bold;
+    }
+  }
+
+  .opening-hours-toggle {
+    font-size: 90%;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .views-row {
+    padding: 0 0 22px 0;
+  }  
+}
+
+.libraries {
+  .ding-library-right {
+    padding-left: 30px;
+  }
+
+  .field-name-field-ding-library-addresse {
+    border-bottom: 2px solid #636363;
+    color: $gray-dark;
+    font-size: 90%;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+
+  .field-label-inline {
+    .field-items {
+      color: $gray-dark;
+      font-size: 90%;
+      font-weight: bold;
+
+      a {
+        font-weight: bold;
+      }
+    }
+
+    .field-label {
+      color: $gray-dark;
+    }
+  }
+}
+
+.opening-hours-week {
+  .header {
+    color: $gray-dark;
+  }
+
+  .days {
+    margin-top: 10px;
+
+    .even {
+      background: #ededed;
+    }
+
+    .odd {
+      background: $white;
+    }
+
+    .day {
+      font-size: 105%;
+      padding: 8px 6px;
+    }
+
+    .times {
+      padding-right: 0;
+    }
+  }
+}
+
+#ding-library-front {
+  .ding-library-contact,
+  .ding-library-address {
+    font-size: 90%;
+    font-weight: bold;
+
+    .pane-title,
+     .pane-title {
+      font-family: $base-font-family;
+      font-weight: normal;
+    }
+  }
+
+  .ding-library-image {
+    margin-top: 30px;
+  }
+
+  .opening-hours-toggle {
+    @include zen-grid-item(12, 1);
+    font-size: 90%;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 0;
+  }
+
+  .ding-library-opening-hours {
+    .pane-title {
+      display: none;
+    }
+
+    .opening-hours-week {
+      background: none;
+
+      .header {
+        @include zen-grid-item(4, 1, right);
+        background: none;
+        margin-top: -63px;
+      }
+    }
+  }
+
+  .ding-library-news,
+  .ding-library-events {
+    padding-right: 0;
+
+    .pane-content {
+      margin-right: 10px;
+    }
+
+    .pane-title {
+      border-top: 2px solid #6d85be;
+      color: $blue;
+      font-family: $base-font-family;
+      font-weight: bold;
+      font-size: 180%;
+      padding-bottom: 8px;
+      padding-top: 25px;
+    }
+  }
+
+  .ding-library-events {
+    padding-left: 0;
+
+    .pane-content {
+      margin-left: 10px;
+    }
+
+    .event-list {
+      .event-list-heading,
+      .heading {
+        font-size: 90%;
+      }
+
+      .event-list-description {
+        color: $gray-dark;
+        font-size: 90%;
+        line-height: 1.2em;
+      }
+
+      .event-list-location {
+        display: block;
+        line-height: 1em;
+
+        a {
+          color: $gray-dark;
+          font-weight: normal;
+        }
+      }
+
+      .event-list-time,
+      .event-list-price {
+        color: $gray-dark;
+        font-weight: normal;
+        line-height: 1em;
+      }
+    }
+  }
+
+  .event-list-leaf .event-list-fulldate {
+    font-size: 110%;
+  }
+}
+
+.node-type-ding-library {
+  .pane-node-title h1 {
+    border-bottom: 2px solid #6d85be;
+    color: $blue;
+    font-family: $base-font-family;
+    font-size: 200%;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+}

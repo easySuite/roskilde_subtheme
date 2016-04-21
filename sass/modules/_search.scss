@@ -1,0 +1,232 @@
+/* Search styles
+   ========================================================================== */
+
+.pane-ding-facetbrowser {
+  .form-wrapper {
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+  }
+
+  .pane-title {
+    color: #4b4b4b;
+    font-family: $base-font-family;
+    font-weight: bold;
+    border-bottom: 2px solid #8e8e8e;
+    font-size: 130%;
+    line-height: 45px;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+  }
+
+  fieldset {
+    border-bottom: 1px dashed #8d8d8d;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .fieldset-legend {
+    color: #4b4b4b;
+    font-family: $base-font-family;
+    font-weight: bold;
+    font-size: 110%;
+  }
+
+  .form-checkboxes .form-item,
+  .form-radios .form-item {
+    font-size: 120%;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .count {
+    color: #00c2f4;
+  }
+
+  .expand {
+    color: $gray-darker;
+    font-family: $base-font-family;
+    font-size: 130%;
+    font-weight: bold;
+  }
+}
+
+.pane-ding-facetbrowser .selected-checkbox-group .unselect,
+.pane-search-backends .selected-checkbox-group .unselect {
+  color: $gray-darker;
+  font-family: $base-font-family;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.pane-ding-facetbrowser .form-wrapper .fieldset-wrapper .form-checkboxes .form-item,
+.pane-search-backends .form-wrapper .fieldset-wrapper .form-checkboxes .form-item {
+  margin: 8px 0;
+}
+
+.pane-search-result,
+.view-node-search-result,
+.ting-reference-reverse-list,
+.pane-new-materials {
+  .search-results {
+    .list {
+      .list-item {
+        padding: 0;
+        background: none;
+      }
+
+      .view-mode-teaser {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.ting-object {
+  display: table;
+  width: 100%;
+}
+
+.ting-object-left {
+  margin-right: 0;
+  float: none;
+  display: table-cell;
+  background: #e1e1e1;
+  padding-right: 0;
+  width: 25%;
+
+  .ting-cover {
+    min-height: 165px;
+  }
+}
+
+.ting-object-right {
+  margin-left: 0;
+  float: none;
+  padding-left: 30px;
+  padding-top: 25px;
+  vertical-align: top;
+  width: 75%;
+  display: table-cell;
+}
+
+.ting-cover:before {
+  color: $gray-darker;
+  font-size: 60px;
+  left: 50%;
+  top: 75px;
+  margin-left: -30px;
+}
+
+.pane-search-result .search-results .list .search-result--availability,
+.view-node-search-result .search-results .list .search-result--availability,
+.ting-reference-reverse-list .search-results .list .search-result--availability,
+.pane-new-materials .search-results .list .search-result--availability {
+  margin-top: 0;
+  width: 100%;
+}
+
+.messages.status,
+.messages table tr.ok {
+  background: #58af2d;
+}
+
+.pane-search-result .search-results .list .search-result--heading-type {
+  color: $gray-darker;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.pane-search-result .search-results .list .heading h2 {
+  font-family: $base-font-family;
+  font-size: 170%;
+  font-weight: bold;
+
+  a {
+    color: $gray-dark;
+    font-weight: bold;
+  }
+}
+
+.ting-object-right .heading + .content {
+  font-size: 90%;
+  font-weight: bold;
+  font-family: $base-font-family;
+
+  a {
+    color: $gray-darker;
+    font-weight: bold;
+  }
+}
+
+.search-results .availability {
+  font-size: 90%;
+  font-weight: bold;
+
+  a {
+    font-weight: bold;
+    font-size: 100%;
+    color: #00b7e7;
+  }
+}
+
+.pane-search-result .search-results .list .search-result--availability,
+.view-node-search-result .search-results .list .search-result--availability,
+.ting-reference-reverse-list .search-results .list .search-result--availability,
+.pane-new-materials .search-results .list .search-result--availability,
+.pane-search-result .search-results .list .search-result--series,
+.view-node-search-result .search-results .list .search-result--series,
+.ting-reference-reverse-list .search-results .list .search-result--series,
+.pane-new-materials .search-results .list .search-result--series {
+  padding-top: 10px;
+}
+
+.pane-ting-object {
+  .ting-object-left {
+    padding-right: 0;
+  }
+
+  .ting-object-wrapper {
+    padding: 0;
+    background: none;
+  }
+
+  .ting-object-inner-wrapper {
+    padding: 0 20px 20px 0;
+    background: none;
+  }
+
+  .field-name-ting-type {
+    float: none;
+    clear: both;
+    border-bottom: 2px solid #6d85be;
+    color: $blue;
+    font-family: $base-font-family;
+    font-size: 200%;
+    line-height: 1.2em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.pane-ting-ting-object-types,
+.pane-ting-ting-relation-anchors {
+  .pane-title {
+    color: $gray-darker;
+    font-family: $base-font-family;
+    font-weight: bold;
+    border-bottom: 2px solid #8e8e8e;
+    font-size: 130%;
+    line-height: 45px;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+  }
+}
