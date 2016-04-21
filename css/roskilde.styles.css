@@ -273,17 +273,36 @@ body {
   padding-bottom: 20px;
 }
 
-.label a, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a, .subjects .subject a, .news-list .news-label a, .super-heading .field-name-field-ding-news-library .field-item a {
+.label a,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a,
+.subjects .subject a,
+.news-list .news-label a,
+.super-heading .field-name-field-ding-news-library .field-item a {
   background: #ab398e;
   border-radius: 0;
   font-size: 85%;
 }
-.label a:hover, .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover, .subjects .subject a:hover, .news-list .news-label a:hover, .super-heading .field-name-field-ding-news-library .field-item a:hover {
+.label a:hover,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover,
+.subjects .subject a:hover,
+.news-list .news-label a:hover,
+.super-heading .field-name-field-ding-news-library .field-item a:hover {
   background: #a03585;
 }
 
-.label, .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .subjects .subject, .news-list .news-label, .super-heading .field-name-field-ding-news-library .field-item {
+.label,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a,
+.subjects .subject,
+.news-list .news-label,
+.super-heading .field-name-field-ding-news-library .field-item {
   text-shadow: none;
+}
+
+label {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Header styles
@@ -641,4 +660,386 @@ textarea {
 }
 .news .super-heading .label {
   font-size: 85%;
+}
+
+/* Libraries styles
+   ========================================================================== */
+.pane-ding-library-ding-library-libraries-list {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.library-list .views-row:nth-child(odd),
+.library-list .views-row:nth-child(even) {
+  background: #fff;
+}
+
+.library-list .library-title {
+  border: none;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 180%;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+.library-list .library-title a {
+  color: #2f2f2f;
+  font-weight: bold;
+}
+.library-list .opening-hours-toggle {
+  font-size: 90%;
+  font-weight: bold;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.library-list .views-row {
+  padding: 0 0 22px 0;
+}
+
+.libraries .ding-library-right {
+  padding-left: 30px;
+}
+.libraries .field-name-field-ding-library-addresse {
+  border-bottom: 2px solid #636363;
+  color: #2f2f2f;
+  font-size: 90%;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.libraries .field-label-inline .field-items {
+  color: #2f2f2f;
+  font-size: 90%;
+  font-weight: bold;
+}
+.libraries .field-label-inline .field-items a {
+  font-weight: bold;
+}
+.libraries .field-label-inline .field-label {
+  color: #2f2f2f;
+}
+
+.opening-hours-week .header {
+  color: #2f2f2f;
+}
+.opening-hours-week .days {
+  margin-top: 10px;
+}
+.opening-hours-week .days .even {
+  background: #ededed;
+}
+.opening-hours-week .days .odd {
+  background: #fff;
+}
+.opening-hours-week .days .day {
+  font-size: 105%;
+  padding: 8px 6px;
+}
+.opening-hours-week .days .times {
+  padding-right: 0;
+}
+
+#ding-library-front .ding-library-contact,
+#ding-library-front .ding-library-address {
+  font-size: 90%;
+  font-weight: bold;
+}
+#ding-library-front .ding-library-contact .pane-title,
+#ding-library-front .ding-library-contact .pane-title,
+#ding-library-front .ding-library-address .pane-title,
+#ding-library-front .ding-library-address .pane-title {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+}
+#ding-library-front .ding-library-image {
+  margin-top: 30px;
+}
+#ding-library-front .opening-hours-toggle {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 90%;
+  font-weight: bold;
+  margin-top: 30px;
+  padding-left: 0;
+}
+#ding-library-front .ding-library-opening-hours .pane-title {
+  display: none;
+}
+#ding-library-front .ding-library-opening-hours .opening-hours-week {
+  background: none;
+}
+#ding-library-front .ding-library-opening-hours .opening-hours-week .header {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: none;
+  margin-top: -63px;
+}
+#ding-library-front .ding-library-news,
+#ding-library-front .ding-library-events {
+  padding-right: 0;
+}
+#ding-library-front .ding-library-news .pane-content,
+#ding-library-front .ding-library-events .pane-content {
+  margin-right: 10px;
+}
+#ding-library-front .ding-library-news .pane-title,
+#ding-library-front .ding-library-events .pane-title {
+  border-top: 2px solid #6d85be;
+  color: #4565ae;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 180%;
+  padding-bottom: 8px;
+  padding-top: 25px;
+}
+#ding-library-front .ding-library-events {
+  padding-left: 0;
+}
+#ding-library-front .ding-library-events .pane-content {
+  margin-left: 10px;
+}
+#ding-library-front .ding-library-events .event-list .event-list-heading,
+#ding-library-front .ding-library-events .event-list .heading {
+  font-size: 90%;
+}
+#ding-library-front .ding-library-events .event-list .event-list-description {
+  color: #2f2f2f;
+  font-size: 90%;
+  line-height: 1.2em;
+}
+#ding-library-front .ding-library-events .event-list .event-list-location {
+  display: block;
+  line-height: 1em;
+}
+#ding-library-front .ding-library-events .event-list .event-list-location a {
+  color: #2f2f2f;
+  font-weight: normal;
+}
+#ding-library-front .ding-library-events .event-list .event-list-time,
+#ding-library-front .ding-library-events .event-list .event-list-price {
+  color: #2f2f2f;
+  font-weight: normal;
+  line-height: 1em;
+}
+#ding-library-front .event-list-leaf .event-list-fulldate {
+  font-size: 110%;
+}
+
+.node-type-ding-library .pane-node-title h1 {
+  border-bottom: 2px solid #6d85be;
+  color: #4565ae;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+/* Search styles
+   ========================================================================== */
+.pane-ding-facetbrowser .form-wrapper {
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+}
+.pane-ding-facetbrowser .pane-title {
+  color: #4b4b4b;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #8e8e8e;
+  font-size: 130%;
+  line-height: 45px;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+}
+.pane-ding-facetbrowser fieldset {
+  border-bottom: 1px dashed #8d8d8d;
+  padding-left: 0;
+  padding-right: 0;
+}
+.pane-ding-facetbrowser .fieldset-legend {
+  color: #4b4b4b;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 110%;
+}
+.pane-ding-facetbrowser .form-checkboxes .form-item,
+.pane-ding-facetbrowser .form-radios .form-item {
+  font-size: 120%;
+}
+.pane-ding-facetbrowser .form-checkboxes .form-item a,
+.pane-ding-facetbrowser .form-radios .form-item a {
+  font-weight: bold;
+}
+.pane-ding-facetbrowser .count {
+  color: #00c2f4;
+}
+.pane-ding-facetbrowser .expand {
+  color: #4b4b4b;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.pane-ding-facetbrowser .selected-checkbox-group .unselect,
+.pane-search-backends .selected-checkbox-group .unselect {
+  color: #4b4b4b;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.pane-ding-facetbrowser .form-wrapper .fieldset-wrapper .form-checkboxes .form-item,
+.pane-search-backends .form-wrapper .fieldset-wrapper .form-checkboxes .form-item {
+  margin: 8px 0;
+}
+
+.pane-search-result .search-results .list .list-item,
+.view-node-search-result .search-results .list .list-item,
+.ting-reference-reverse-list .search-results .list .list-item,
+.pane-new-materials .search-results .list .list-item {
+  padding: 0;
+  background: none;
+}
+.pane-search-result .search-results .list .view-mode-teaser,
+.view-node-search-result .search-results .list .view-mode-teaser,
+.ting-reference-reverse-list .search-results .list .view-mode-teaser,
+.pane-new-materials .search-results .list .view-mode-teaser {
+  padding: 0;
+}
+
+.ting-object {
+  display: table;
+  width: 100%;
+}
+
+.ting-object-left {
+  margin-right: 0;
+  float: none;
+  display: table-cell;
+  background: #e1e1e1;
+  padding-right: 0;
+  width: 25%;
+}
+.ting-object-left .ting-cover {
+  min-height: 165px;
+}
+
+.ting-object-right {
+  margin-left: 0;
+  float: none;
+  padding-left: 30px;
+  padding-top: 25px;
+  vertical-align: top;
+  width: 75%;
+  display: table-cell;
+}
+
+.ting-cover:before {
+  color: #4b4b4b;
+  font-size: 60px;
+  left: 50%;
+  top: 75px;
+  margin-left: -30px;
+}
+
+.pane-search-result .search-results .list .search-result--availability, .view-node-search-result .search-results .list .search-result--availability, .ting-reference-reverse-list .search-results .list .search-result--availability, .pane-new-materials .search-results .list .search-result--availability {
+  margin-top: 0;
+  width: 100%;
+}
+
+.messages.status,
+.messages table tr.ok {
+  background: #58af2d;
+}
+
+.pane-search-result .search-results .list .search-result--heading-type {
+  color: #4b4b4b;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.pane-search-result .search-results .list .heading h2 {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 170%;
+  font-weight: bold;
+}
+.pane-search-result .search-results .list .heading h2 a {
+  color: #2f2f2f;
+  font-weight: bold;
+}
+
+.ting-object-right .heading + .content {
+  font-size: 90%;
+  font-weight: bold;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+.ting-object-right .heading + .content a {
+  color: #4b4b4b;
+  font-weight: bold;
+}
+
+.search-results .availability {
+  font-size: 90%;
+  font-weight: bold;
+}
+.search-results .availability a {
+  font-weight: bold;
+  font-size: 100%;
+  color: #00b7e7;
+}
+
+.pane-search-result .search-results .list .search-result--availability, .view-node-search-result .search-results .list .search-result--availability, .ting-reference-reverse-list .search-results .list .search-result--availability, .pane-new-materials .search-results .list .search-result--availability, .pane-search-result .search-results .list .search-result--series, .view-node-search-result .search-results .list .search-result--series, .ting-reference-reverse-list .search-results .list .search-result--series, .pane-new-materials .search-results .list .search-result--series {
+  padding-top: 10px;
+}
+
+.pane-ting-object .ting-object-left {
+  padding-right: 0;
+}
+.pane-ting-object .ting-object-wrapper {
+  padding: 0;
+  background: none;
+}
+.pane-ting-object .ting-object-inner-wrapper {
+  padding: 0 20px 20px 0;
+  background: none;
+}
+.pane-ting-object .field-name-ting-type {
+  float: none;
+  clear: both;
+  border-bottom: 2px solid #6d85be;
+  color: #4565ae;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 200%;
+  line-height: 1.2em;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.pane-ting-object .field-name-ting-type ul,
+.pane-ting-object .field-name-ting-type li {
+  margin: 0;
+  padding: 0;
+}
+
+.pane-ting-ting-object-types .pane-title,
+.pane-ting-ting-relation-anchors .pane-title {
+  color: #4b4b4b;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #8e8e8e;
+  font-size: 130%;
+  line-height: 45px;
+  margin-bottom: 0;
+  padding-bottom: 13px;
 }
