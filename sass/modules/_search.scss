@@ -70,6 +70,8 @@
 .ting-reference-reverse-list,
 .pane-new-materials {
   .search-results {
+    margin-top: 20px;
+
     .list {
       .list-item {
         padding: 0;
@@ -229,4 +231,140 @@
     margin-bottom: 0;
     padding-bottom: 13px;
   }
+}
+
+.ting-object-right {
+  .field-type-ting-type {
+    display: none;
+  }
+}
+
+.ting-object-left {
+  overflow: hidden;
+
+  .ting-cover {
+    background: $white;
+    margin-bottom: -9000px;
+    padding-bottom: 9000px;
+  }
+}
+
+.pane-ting-collection,
+.pane-ting-object {
+  .ting-collection-wrapper {
+    background: none;
+    padding: 0;
+  }
+
+  .ting-collection-inner-wrapper {
+    background: none;
+    padding: 0;
+  
+    > h2 {
+      float: none;
+      clear: both;
+      border-bottom: 2px solid #6d85be;
+      color: $blue;
+      font-family: $base-font-family;
+      font-size: 200%;
+      line-height: 1.2em;
+      font-weight: bold;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .ting-object.view-mode-collection-list {
+      background: $white;
+      padding-bottom: 20px;
+      padding-right: 20px;
+    }
+    
+    .field-type-ting-title {
+      h2 {
+        font-family: $base-font-family;
+        font-weight: bold;
+        
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+    
+    .field-type-ting-author {
+      font-size: 90%;
+      font-weight: bold;
+      
+      a {
+        font-weight: bold;
+      }
+    }
+    
+    .field.field-name-ting-abstract {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    
+    .field-type-ting-series {
+      border-bottom: none;
+      font-family: $base-font-family;
+      font-weight: bold;
+      font-size: 90%;
+      padding-bottom: 0;
+      
+      .field-label,
+      a {
+        font-family: $base-font-family;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .subjects {
+    margin-bottom: 15px;
+
+    .subject {
+      font-size: 85%;
+      padding: 0 12px;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.pane-ting-ting-collection-types {
+  .pane-title {
+    color: $gray-darker;
+    font-family: $base-font-family;
+    font-weight: bold;
+    border-bottom: 2px solid #8e8e8e;
+    font-size: 130%;
+    line-height: 45px;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 20px 0 0 0;
+    
+    a {
+      color: #00a1e3;
+      font-weight: bold;
+      padding-left: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &.active {
+        color: $gray-dark;
+        font-family: $base-font-family;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.pane-ting-collection .field-name-ding-entity-buttons,
+.pane-ting-object .field-name-ding-entity-buttons {
+  float: none;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
