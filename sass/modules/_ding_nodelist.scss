@@ -1,0 +1,136 @@
+/* Ding nodelist styles
+   ========================================================================== */
+
+/*Nodes in blocks*/   
+
+.ding_nodelist-node_blocks .ding_nodelist-items {
+  .nb-event-summary {
+    height: 46px;
+    overflow: hidden;
+  }
+
+  .nb-library,
+  .nb-event-info {
+    font-weight: bold;
+    
+    a {
+      font-weight: bold;
+    }
+  }
+
+  h3 {
+    height: 62px;
+    overflow: hidden;
+  }
+
+  .nb-item:nth-child(1),
+  .nb-item:nth-child(2),
+  .nb-item:nth-child(7) {
+    background: #ec6608;
+    color: #2d2e2f;
+    
+    a {
+      color: #2d2e2f;
+      text-shadow: none;
+      
+      &:hover {
+        color: #2d2e2f;
+        text-shadow: none;
+      }
+      
+      &:before {
+        color: #2d2e2f !important;
+      }
+    }
+  }
+  
+  .nb-item:nth-child(3),
+  .nb-item:nth-child(4),
+  .nb-item:nth-child(5) {
+    background: #e4003b;
+    color: #fff;
+    
+    a {
+      color: #fff;
+      text-shadow: none;
+      
+      &:hover {
+        color: #fff;
+        text-shadow: none;
+      }
+      
+      &:before {
+        color: #fff !important;
+      }
+    }
+  }
+  
+  .nb-item:nth-child(6),
+  .nb-item:nth-child(8) {
+    background: #c7d650;
+    color: #303030;
+    
+    a {
+      color: #303030;
+      text-shadow: none;
+      
+      &:hover {
+        color: #303030;
+        text-shadow: none;
+      }
+      
+      &:before {
+        color: #303030 !important;
+      }
+    }
+  }
+  
+  .nb-item.ding_news {
+    h3 {
+      height: 100px;
+      
+      a:before {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    
+    .nb-event-summary {
+      height: 75px;
+    }
+  }
+}
+
+.ding_nodelist .node,
+.ding_nodelist.ding_nodelist-horizontal_accordion .data {
+  background: $white;
+}
+
+.ding_nodelist-single {
+  .label,
+  .event-time {
+    display: none;
+  }
+  
+  .node {
+    height: 150px;
+    color: #303030;
+    
+    h3.node-title {
+      text-decoration: none;
+      
+      a {
+        color: #303030;
+        text-decoration: none;
+      }
+    }
+    
+    .item-date {
+      display: none;
+      
+      & + div {
+        display: none;
+      }
+    }
+  }
+}

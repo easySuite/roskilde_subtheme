@@ -59,6 +59,11 @@
   height: 96px;
 }
 
+.header-wrapper .header-inner > section {
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
 .header-wrapper .search,
 .header-wrapper .search-field-in-content {
   padding-bottom: 36px;
@@ -109,10 +114,15 @@ textarea {
   .main-menu {
     li {
       display: inline-block;
-      width: calc(100% / 6);
+      width: calc(100% / 6 - 5px);
     }
     .menu-item {
       color: $white;
+    }
+    
+    .link-description {
+      color: $white;
+      margin-top: 10px;
     }
   }
 }

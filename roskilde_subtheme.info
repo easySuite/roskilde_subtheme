@@ -6,4 +6,8 @@
 
   base theme = ddbasic
   
+  
+  stylesheets[all][] = js/lib/dist/css/select2.min.css
   stylesheets[all][] = css/roskilde.styles.css
+  scripts[] = js/lib/dist/js/select2.min.js
+  scripts[] = js/custom.js

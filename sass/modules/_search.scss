@@ -140,6 +140,18 @@
   font-weight: bold;
 }
 
+.pane-search-result .search-results .field-type-ting-series {
+  font-weight: bold;
+  
+  a {
+    font-weight: bold;
+  }
+  
+  .field-items {
+    font-size: 90%;
+  }
+}
+
 .pane-search-result .search-results .list .heading h2 {
   font-family: $base-font-family;
   font-size: 170%;
@@ -189,14 +201,56 @@
     padding-right: 0;
   }
 
+  .field-type-ting-title h2 {
+    font-family: $base-font-family;
+    font-weight: bold;
+    
+    a {
+      font-weight: bold;
+    }
+  }
+
   .ting-object-wrapper {
     padding: 0;
     background: none;
+
+    &:first-child {
+      background: $white;
+      margin-bottom: 30px;
+      
+      h2 {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
 
   .ting-object-inner-wrapper {
     padding: 0 20px 20px 0;
     background: none;
+    
+    h2 {
+      border-bottom: 2px solid #6d85be;
+      font-family: $base-font-family;
+      font-weight: bold;
+      padding-bottom: 20px;
+      margin-left: 5px;
+      margin-right: -20px;
+      
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .field-type-ting-author {
+    font-weight: bold;
+
+    a {
+      font-weight: bold;
+    }
   }
 
   .field-name-ting-type {
@@ -216,6 +270,12 @@
       margin: 0;
       padding: 0;
     }
+  }
+  
+  .group-material-details .field-group-format-wrapper {
+    background: $white;
+    margin: 30px -20px 0 0;
+    padding: 30px;
   }
 }
 
@@ -367,4 +427,182 @@
   float: none;
   margin-bottom: 30px;
   margin-top: 20px;
+}
+
+.field-name-ding-entity-buttons {
+  text-align: left;
+}
+
+.search-field-in-content .form-text,
+.search-field-in-content .form-submit {
+  min-height: 50px;
+}
+
+.search-field-in-content .form-submit {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.search-field-in-content [class^="icon-"] {
+  font-size: 125%;
+}
+
+.pane-search-backends {
+  fieldset {
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  legend {
+    color: #4b4b4b;
+    font-family: $base-font-family;
+    font-weight: bold;
+    border-bottom: 2px solid #8e8e8e;
+    font-size: 130%;
+    line-height: 45px;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+    padding-top: 0;
+    width: 100%;
+  }
+  
+  .fieldset-legend {
+    color: #4b4b4b;
+  }
+  
+  .fieldset-wrapper {
+    margin: 30px 0 0 0;
+  }
+  
+  a {
+    font-size: 120%;
+    font-weight: bold;
+  }
+}
+
+.pane-search-result-count {
+  width: 100%;
+}
+
+.pane-search-result .search-results .list .view-mode-teaser,
+.view-node-search-result .search-results .list .view-mode-teaser,
+.ting-reference-reverse-list .search-results .list .view-mode-teaser,
+.pane-new-materials .search-results .list .view-mode-teaser {
+  background: $white;
+}
+
+.pane-ting-object .group-material-details .field-items {
+  font-weight: bold;
+  font-size: 90%;
+  
+  a {
+    font-weight: bold;
+  }
+}
+
+.pane-ting-ting-object-types,
+.pane-ting-ting-relation-anchors {
+  ul {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 0;
+    
+    li {
+      a {
+        color: #00a1e3;
+        font-weight: bold;
+        padding-left: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+.pane-ting-object .ting-object-related-item,
+.pane-ting-object .ting-object-related-item.last {
+  background: $white;
+  padding: 30px;
+  margin-right: -20px;
+  margin-left: 6px;
+  margin-top: 30px;
+}
+
+.field-name-ding-entity-buttons .reserve-button {
+  float: none;
+}
+
+.group-holdings-available {
+  font-weight: bold;
+
+  .field-group-format-wrapper {
+    background: $white;
+    padding: 10px;
+    margin-right: -20px;
+    margin-left: 6px;
+    margin-top: 30px;
+  }
+  
+  .table-bordered, table {
+    border: none;
+    border-radius: 0;
+    
+    th, td {
+      background: none;
+      border: none;
+    }
+  }
+  
+  tr.odd {
+    background: #eee;
+  }
+  
+  tr.even {
+    background: none;
+  }
+}
+
+.ting-cover img {
+  max-width: 215px;
+}
+
+.pane-ting-object .ting-object-inner-wrapper {
+  .ting-reference-reverse-list {
+    h2 {
+      border: none;
+      margin-top: 20px;
+      padding-bottom: 0;
+    }
+  }
+  
+  .node-ding-event,
+  .node-ding-news {
+    background: $white;
+    overflow: hidden;
+    margin-right: -20px;
+    padding: 0 20px 30px 0;
+    
+    .event-arrow-link {
+      font-size: 88px;
+      top: 18px;
+      right: -10px;
+      
+      i {
+        line-height: 55px;
+        width: 30px;
+        
+        &:before {
+          content: "\f105";
+        }
+      }
+      
+      a {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.pane-ting-object .ting-object-wrapper {
+  margin-bottom: 15px;
 }
