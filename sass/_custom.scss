@@ -23,6 +23,10 @@ body {
   font-family: $base-font-family;
 }
 
+#page {
+  overflow: hidden;
+}
+
 .layout-wrapper {
   background: none;
 }

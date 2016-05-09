@@ -152,6 +152,16 @@
   }
 }
 
+.pane-search-result {
+  .field-name-ding-entity-buttons {
+    display: none;
+  }
+  
+  .more-info-wrapper {
+    display: none;
+  }
+}
+
 .pane-search-result .search-results .list .heading h2 {
   font-family: $base-font-family;
   font-size: 170%;
@@ -169,7 +179,6 @@
   font-family: $base-font-family;
 
   a {
-    color: $gray-darker;
     font-weight: bold;
   }
 }
@@ -223,6 +232,10 @@
         padding-bottom: 0;
         margin-left: 0;
         margin-right: 0;
+        
+        a {
+          color: #303030;
+        }
       }
     }
   }
@@ -233,6 +246,7 @@
     
     h2 {
       border-bottom: 2px solid #6d85be;
+      color: $blue;
       font-family: $base-font-family;
       font-weight: bold;
       padding-bottom: 20px;
@@ -241,6 +255,7 @@
       
       a {
         font-weight: bold;
+        color: $blue;
       }
     }
   }
@@ -605,4 +620,30 @@
 
 .pane-ting-object .ting-object-wrapper {
   margin-bottom: 15px;
+}
+
+.pane-ting-search-related-content-panel-pane-1 {
+  display: none;
+}
+
+.pane-search-result .search-results .list .list-item.ding-search-collection .ting-collection-wrapper,
+.view-node-search-result .search-results .list .list-item.ding-search-collection .ting-collection-wrapper,
+.ting-reference-reverse-list .search-results .list .list-item.ding-search-collection .ting-collection-wrapper,
+.pane-new-materials .search-results .list .list-item.ding-search-collection .ting-collection-wrapper,
+div[class^="collection-bg"],
+.pane-bibliotek-info {
+  background: $white;
+}
+
+.page-search a.availability.availability,
+.page-search .availability.availability.available,
+.page-search .availability.availability.available.reservable,
+.page-search .availability.availability.unavailable.not-reservable,
+.page-search .availability.availability.unavailable.reservable {
+  background: none;
+  color: $link-color;
+}
+
+.step-back {
+  display: none;
 }
