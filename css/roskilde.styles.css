@@ -244,6 +244,10 @@ body {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
+#page {
+  overflow: hidden;
+}
+
 .layout-wrapper {
   background: none;
 }
@@ -593,7 +597,7 @@ table tbody:first-child tr:first-child td:first-child {
 }
 
 .header-wrapper .header-inner > section {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 30px;
 }
 
@@ -804,15 +808,13 @@ textarea {
   content: "\f105";
 }
 
-.event .event-image {
-  width: 100%;
-  margin-right: 0;
-  max-width: 100%;
-}
 .event .event-lead {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 110%;
   font-weight: bold;
+}
+.event .event-tags {
+  margin-top: 16px;
 }
 .event .field-name-field-ding-event-body {
   font-size: 110%;
@@ -823,10 +825,6 @@ textarea {
 }
 .event .event-info a {
   font-weight: bold;
-}
-.event .event-tags {
-  clear: both;
-  padding-top: 10px;
 }
 
 .pane-ding-event-ding-event-list-same-tag .pane-title {
@@ -994,6 +992,15 @@ textarea {
 .pane-library-list label {
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.news-list .news-image-wrapper {
+  position: absolute;
+  top: 0;
+}
+
+.news-list .news-link {
+  margin-left: 170px;
 }
 
 /* Libraries styles
@@ -1193,6 +1200,11 @@ textarea {
   margin-top: 20px;
 }
 
+.node-type-ding-library .news-list .news-heading {
+  font-size: 150%;
+  margin-top: 20px;
+}
+
 /* Search styles
    ========================================================================== */
 .pane-ding-facetbrowser .form-wrapper {
@@ -1335,6 +1347,13 @@ textarea {
   font-size: 90%;
 }
 
+.pane-search-result .field-name-ding-entity-buttons {
+  display: none;
+}
+.pane-search-result .more-info-wrapper {
+  display: none;
+}
+
 .pane-search-result .search-results .list .heading h2 {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 170%;
@@ -1351,7 +1370,6 @@ textarea {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 .ting-object-right .heading + .content a {
-  color: #4b4b4b;
   font-weight: bold;
 }
 
@@ -1400,12 +1418,16 @@ textarea {
   margin-left: 0;
   margin-right: 0;
 }
+.pane-ting-object .ting-object-wrapper:first-child h2 a {
+  color: #303030;
+}
 .pane-ting-object .ting-object-inner-wrapper {
   padding: 0 20px 20px 0;
   background: none;
 }
 .pane-ting-object .ting-object-inner-wrapper h2 {
   border-bottom: 2px solid #6d85be;
+  color: #4565ae;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
   padding-bottom: 20px;
@@ -1414,6 +1436,7 @@ textarea {
 }
 .pane-ting-object .ting-object-inner-wrapper h2 a {
   font-weight: bold;
+  color: #4565ae;
 }
 .pane-ting-object .field-type-ting-author {
   font-weight: bold;
@@ -1738,6 +1761,32 @@ textarea {
   margin-bottom: 15px;
 }
 
+.pane-ting-search-related-content-panel-pane-1 {
+  display: none;
+}
+
+.pane-search-result .search-results .list .list-item.ding-search-collection .ting-collection-wrapper,
+.view-node-search-result .search-results .list .list-item.ding-search-collection .ting-collection-wrapper,
+.ting-reference-reverse-list .search-results .list .list-item.ding-search-collection .ting-collection-wrapper,
+.pane-new-materials .search-results .list .list-item.ding-search-collection .ting-collection-wrapper,
+div[class^="collection-bg"],
+.pane-bibliotek-info {
+  background: #fff;
+}
+
+.page-search a.availability.availability,
+.page-search .availability.availability.available,
+.page-search .availability.availability.available.reservable,
+.page-search .availability.availability.unavailable.not-reservable,
+.page-search .availability.availability.unavailable.reservable {
+  background: none;
+  color: #00c2f4;
+}
+
+.step-back {
+  display: none;
+}
+
 /* Ding nodelist styles
    ========================================================================== */
 /*Nodes in blocks*/
@@ -1757,70 +1806,35 @@ textarea {
   height: 62px;
   overflow: hidden;
 }
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(1),
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(2),
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(7) {
+.ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-inner {
   background: #ec6608;
   color: #2d2e2f;
 }
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(1) a,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(2) a,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(7) a {
+.ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-inner a {
   color: #2d2e2f;
   text-shadow: none;
 }
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(1) a:hover,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(2) a:hover,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(7) a:hover {
+.ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-inner a:hover {
   color: #2d2e2f;
   text-shadow: none;
 }
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(1) a:before,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(2) a:before,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(7) a:before {
+.ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-inner a:before {
   color: #2d2e2f !important;
 }
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(3),
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(4),
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(5) {
+.ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_event .nb-inner {
   background: #e4003b;
   color: #fff;
 }
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(3) a,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(4) a,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(5) a {
+.ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_event .nb-inner a {
   color: #fff;
   text-shadow: none;
 }
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(3) a:hover,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(4) a:hover,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(5) a:hover {
+.ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_event .nb-inner a:hover {
   color: #fff;
   text-shadow: none;
 }
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(3) a:before,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(4) a:before,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(5) a:before {
+.ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_event .nb-inner a:before {
   color: #fff !important;
-}
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(6),
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(8) {
-  background: #c7d650;
-  color: #303030;
-}
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(6) a,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(8) a {
-  color: #303030;
-  text-shadow: none;
-}
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(6) a:hover,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(8) a:hover {
-  color: #303030;
-  text-shadow: none;
-}
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(6) a:before,
-.ding_nodelist-node_blocks .ding_nodelist-items .nb-item:nth-child(8) a:before {
-  color: #303030 !important;
 }
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news h3 {
   height: 100px;
@@ -1858,4 +1872,50 @@ textarea {
 }
 .ding_nodelist-single .node .item-date + div {
   display: none;
+}
+
+/* Taxonomy page styles
+   ========================================================================== */
+.pane-term-description .pane-title {
+  border-bottom: 2px solid #6d85be;
+  color: #4565ae;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.pane-term-description .pane-content {
+  height: 520px;
+  margin-top: 20px;
+  position: relative;
+}
+.pane-term-description .pane-content h3 {
+  font-size: 160%;
+}
+.pane-term-description .pane-content p {
+  font-size: 160%;
+  line-height: 1.2em;
+}
+
+.page-taxonomy-term-60 .pane-term-description .pane-content {
+  background: url("../images/t-60.jpg") no-repeat 0 0;
+  background-size: cover;
+}
+.page-taxonomy-term-60 .pane-term-description .pane-content .litteratur-wrapper {
+  background: rgba(236, 102, 8, 0.7);
+  height: calc(100% - 40px);
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+
+.pane-ding-news .pane-title {
+  border-top: 2px solid #6d85be;
+  color: #4565ae;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 20px;
 }
