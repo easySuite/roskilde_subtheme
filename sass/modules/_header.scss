@@ -32,12 +32,59 @@
     color: $green;
     font-size: 90%;
     font-weight: bold;
-    padding: 5px 18px;
+    margin: 0;
+    padding: 5px 13px;
 
     &:hover {
       background: $green;
       color: $gray-dark;
       text-decoration: none;
+    }
+    
+    &.active {
+      color: $green;
+      text-decoration: none;
+      
+      &:hover {
+        color: #303030;
+      }
+    }
+  }
+  
+  li {
+    border: none;
+    
+    &:first-child a:before {
+      content: "\f263";
+      font-size: 14px;
+      display: inline-block;
+      text-align: right;
+      margin-right: 10px;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    &:first-child + li a:before {
+      content: "\f095";
+      font-size: 14px;
+      display: inline-block;
+      text-align: right;
+      margin-right: 10px;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    &:first-child + li + li a:before {
+      content: "\f017";
+      font-size: 14px;
+      display: inline-block;
+      text-align: right;
+      margin-right: 10px;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
     }
   }
 }
@@ -53,6 +100,7 @@
 
 .logo {
   margin: 35px 0 25px;
+  width: 25%;
 }
 
 .navigation-wrapper {

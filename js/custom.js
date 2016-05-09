@@ -8,7 +8,12 @@
     $('.pane-library-list select').select2();
   }
 
+  function updateSubmenu() {
+    var secondaryMenu = $('.secondary-menu-wrapper');
+    $('.topbar-menu').after(secondaryMenu);
+  }
   $(document).ready(function() {
     updateSelect();
+    updateSubmenu();
   });
 })(jQuery);
