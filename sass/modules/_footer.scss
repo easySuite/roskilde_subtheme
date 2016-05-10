@@ -76,4 +76,66 @@
       }
     }
   }
+
+  .attachment-fourth {
+    &:before {
+      display: none;
+    }
+
+    .social-links {
+      a {
+        display: inline-block;
+        height: 24px;
+        margin-right: 24px;
+        width: 24px;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:before {
+          color: $white;
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 27px;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        &.icon-t {
+          &:before {
+            content: "\f081";
+          }
+        }
+
+        &.icon-f {
+          &:before {
+            content: "\f082";
+          }
+        }
+
+        &.icon-i {
+          &:before {
+            content: "\f16d";
+          }
+        }
+
+        &.icon-c {
+          &:before {
+            content: "\f0e0";
+          }
+        }
+      }
+    }
+
+    .komunne {
+      a {
+        background: url("../images/roskilde-kommune.png") no-repeat 0 0;
+        display: block;
+        height: 90px;
+        margin-top: 100px;
+        width: 274px;
+      }
+    }
+  }
 }
