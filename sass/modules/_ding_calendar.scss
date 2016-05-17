@@ -1,0 +1,111 @@
+/* Ding calendar styles
+   ========================================================================== */
+
+.pane-widget-block {
+  #ding-calendar-wrapper {
+    h2 {
+      font-size: 90%;
+    }
+
+    .navi-heading {
+      a {
+        margin-top: 0;
+      }
+    }
+  }
+
+  table, th, tr, td {
+    background: 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  th {
+    color: #ec6608;
+  }
+
+  td {
+    font-size: 110%;
+    font-weight: bold;
+  }
+
+  .day-number {
+    a {
+      border-radius: 50px;
+      background: #ec6608;
+      color: $white;
+      font-weight: bold;
+      padding: 8px;
+      text-decoration: none;
+    }
+
+    @include small-medium() {
+      padding: 5px 0;
+    }
+  }
+
+  #ding-calendar-wrapper > div + div .form-item-calendar-search input[type="text"],
+  #ding-calendar-wrapper > div + form .form-item-calendar-search input[type="text"] {
+    border-radius: 0;
+    padding-left: 45px;
+  }
+
+  .form-item-calendar-search {
+    position: relative;
+
+    &:before {
+      color: $blue;
+      content: "\f002";
+      font-family: FontAwesome;
+      font-size: 20px;
+      display: inline;
+      left: 25px;
+      position: absolute;
+      top: 14px;
+      z-index: 20;
+    }
+  }
+
+  #ding-calendar-wrapper > div + div .form-item-calendar-search + input[type="submit"],
+  #ding-calendar-wrapper > div + form .form-item-calendar-search + input[type="submit"] {
+    background: #00a1e0 !important;
+    color: $white !important;
+    height: inherit;
+    line-heigth: inherit;
+    padding-left: 0;
+    padding-right: 0;
+
+    @include small-medium() {
+      margin-left: 10px;
+    }
+  }
+
+  #ding-calendar-wrapper > div + div .form-item-calendar-search input[type="text"],
+  #ding-calendar-wrapper > div + form .form-item-calendar-search input[type="text"] {
+    height: 56px;
+    border: 0;
+    margin-top: -2px;
+
+    &:focus,
+    &:active {
+      background: $white;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+  }
+
+  #ding-calendar-wrapper > div + div,
+  #ding-calendar-wrapper > div + form {
+    padding-top: 2px;
+  }
+}
+
+.pane-widget-view {
+  clear: both;
+
+  .event-list-heading {
+    @include small-medium() {
+      font-size: 100%;
+    }
+  }
+}

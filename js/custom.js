@@ -14,10 +14,10 @@
   }
 
   function updateFooter() {
-    var customFooter = '<div class="social-links"><a href="" class="icon-t"></a>';
-    customFooter +=  '<a href="#" class="icon-f"></a>';
-    customFooter +=  '<a href="#" class="icon-i"></a>';
-    customFooter +=  '<a href="#" class="icon-c"></a></div>';
+    var customFooter = '<div class="social-links"><a href="https://twitter.com/roskildebib" target="_blank" class="icon-t"></a>';
+    customFooter +=  '<a href="https://www.facebook.com/roskildebib" target="_blank" class="icon-f"></a>';
+    customFooter +=  '<a href="https://www.instagram.com/roskildebib/" target="_blank" class="icon-i"></a>';
+    customFooter +=  '<a href="mailto:adm@roskilde.dk" class="icon-c"></a></div>';
     customFooter +=  '<div class="komunne"><a href="#"></a></div>';
     $('.footer .attachment-fourth').html(customFooter);
   }

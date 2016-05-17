@@ -10,16 +10,16 @@
     font-weight: bold;
     padding-bottom: 20px;
   }
-  
+
   .pane-content {
     height: 520px;
     margin-top: 20px;
     position: relative;
-    
+
     h3 {
       font-size: 160%;
     }
-    
+
     p {
       font-size: 160%;
       line-height: 1.2em;
@@ -32,7 +32,7 @@
     .pane-content {
       background: url("../images/t-60.jpg") no-repeat 0 0;
       background-size: cover;
-      
+
       .litteratur-wrapper {
         background: rgba(236, 102, 8, 0.7);
         height: calc(100% - 40px);
@@ -40,6 +40,30 @@
         position: absolute;
         right: 0;
         width: 40%;
+      }
+    }
+  }
+}
+
+.page-taxonomy-term-66 {
+  .pane-term-description {
+    .pane-content {
+      background: url("../images/t-60.jpg") no-repeat 0 0;
+      background-size: cover;
+      height: 265px;
+
+      .roskilde-archives-wrapper {
+        background: none;
+        color: $white;
+        height: calc(100% - 40px);
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        width: inherit;
+
+        h3 {
+          font-size: 180%;
+        }
       }
     }
   }
@@ -54,5 +78,16 @@
     font-weight: bold;
     padding-bottom: 15px;
     padding-top: 20px;
+  }
+}
+
+.page-taxonomy-term {
+  .pane-page-title h2 {
+    border-bottom: 2px solid #6d85be;
+    color: #4565ae;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    padding-bottom: 20px;
   }
 }
