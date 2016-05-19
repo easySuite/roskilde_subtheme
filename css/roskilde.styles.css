@@ -2471,7 +2471,12 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-  .field-name-field-ding-news-materials .field-item, .field-name-field-ding-event-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .node-type-newsletter .newsletter-materials .field-item, .news-list .news-list-item, .groups-list .groups-list-item {
+  .field-name-field-ding-news-materials .field-item,
+  .field-name-field-ding-event-materials .field-item,
+  .library-list .views-row,
+  .field-name-field-ding-page-materials .field-item,
+  .node-type-newsletter .newsletter-materials .field-item,
+  .news-list .news-list-item, .groups-list .groups-list-item {
     padding: 20px;
   }
 }
