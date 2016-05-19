@@ -12,7 +12,7 @@
   .nb-library,
   .nb-event-info {
     font-weight: bold;
-    
+
     a {
       font-weight: bold;
     }
@@ -26,35 +26,35 @@
   .nb-item.ding_news .nb-inner {
     background: #ec6608;
     color: #2d2e2f;
-    
+
     a {
       color: #2d2e2f;
       text-shadow: none;
-      
+
       &:hover {
         color: #2d2e2f;
         text-shadow: none;
       }
-      
+
       &:before {
         color: #2d2e2f !important;
       }
     }
   }
-  
+
   .nb-item.ding_event .nb-inner {
     background: #e4003b;
     color: #fff;
-    
+
     a {
       color: #fff;
       text-shadow: none;
-      
+
       &:hover {
         color: #fff;
         text-shadow: none;
       }
-      
+
       &:before {
         color: #fff !important;
       }
@@ -64,13 +64,13 @@
   .nb-item.ding_news {
     h3 {
       height: 100px;
-      
+
       a:before {
         display: block;
         margin-bottom: 10px;
       }
     }
-    
+
     .nb-event-summary {
       height: 75px;
     }
@@ -87,26 +87,48 @@
   .event-time {
     display: none;
   }
-  
+
   .node {
     height: 150px;
     color: #303030;
-    
+
     h3.node-title {
       text-decoration: none;
-      
+
       a {
         color: #303030;
         text-decoration: none;
       }
     }
-    
+
     .item-date {
       display: none;
-      
+
       & + div {
         display: none;
       }
     }
+  }
+}
+
+@include small-medium() {
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(1),
+  .col9 .ding_nodelist-items .nb-item:nth-child(1),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(2),
+  .col9 .ding_nodelist-items .nb-item:nth-child(2),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(3),
+  .col9 .ding_nodelist-items .nb-item:nth-child(3),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(4),
+  .col9 .ding_nodelist-items .nb-item:nth-child(4),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(5),
+  .col9 .ding_nodelist-items .nb-item:nth-child(5),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(6),
+  .col9 .ding_nodelist-items .nb-item:nth-child(6) {
+    clear: both;
+    float: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
   }
 }

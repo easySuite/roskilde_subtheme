@@ -30,6 +30,10 @@
       }
     }
   }
+  
+  @include small-medium() {
+    padding: 20px;
+  }
 }
 
 .footer {
@@ -46,6 +50,10 @@
       left: 10px;
       position: absolute;
       width: 1px;
+      
+      @include small-medium() {
+        display: none;
+      }
     }
   }
 
@@ -126,6 +134,15 @@
           }
         }
       }
+      
+      @include small-medium() {
+        margin-top: 20px;
+        text-align: center;
+        
+        a {
+          margin: 0 15px;
+        }
+      }
     }
 
     .komunne {
@@ -135,7 +152,19 @@
         height: 90px;
         margin-top: 100px;
         width: 274px;
+        
+        @include small-medium() {
+          margin: 40px auto 10px;
+        }
       }
+    }
+    
+    @include small-medium() {
+      width: 100%;
+      float: none;
+      clear: both;
+      margin: 0 auto;
+      padding-top: 30px;
     }
   }
 }

@@ -1886,7 +1886,7 @@ table tbody:first-child tr:first-child td:first-child {
   border: none;
 }
 .secondary-menu li:first-child a:before {
-  content: "\f263";
+  content: "\f017";
   font-size: 14px;
   display: inline-block;
   text-align: right;
@@ -1896,7 +1896,7 @@ table tbody:first-child tr:first-child td:first-child {
   -webkit-font-smoothing: antialiased;
 }
 .secondary-menu li:first-child + li a:before {
-  content: "\f095";
+  content: "\f263";
   font-size: 14px;
   display: inline-block;
   text-align: right;
@@ -1906,7 +1906,17 @@ table tbody:first-child tr:first-child td:first-child {
   -webkit-font-smoothing: antialiased;
 }
 .secondary-menu li:first-child + li + li a:before {
-  content: "\f017";
+  content: "\f095";
+  font-size: 14px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.secondary-menu li:first-child + li + li + li a:before {
+  content: "\f1ab";
   font-size: 14px;
   display: inline-block;
   text-align: right;
@@ -1924,14 +1934,43 @@ table tbody:first-child tr:first-child td:first-child {
   padding-right: 0;
   width: auto;
 }
+@media only screen and (max-width: 768px) {
+  .secondary-menu-wrapper,
+  .topbar-menu {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .secondary-menu-wrapper {
+    margin-top: 0;
+    width: 100%;
+  }
+  .secondary-menu-wrapper .secondary-menu {
+    margin: 10px;
+  }
+  .secondary-menu-wrapper .secondary-menu li:before {
+    display: none;
+  }
+}
 
 .logo {
   margin: 35px 0 25px;
   width: 25%;
 }
+@media only screen and (max-width: 768px) {
+  .logo img {
+    height: inherit;
+  }
+}
 
 .navigation-wrapper {
   height: 96px;
+}
+@media only screen and (max-width: 768px) {
+  .navigation-wrapper {
+    height: inherit;
+  }
 }
 
 .header-wrapper .header-inner > section {
@@ -2000,6 +2039,11 @@ textarea {
   display: inline-block;
   width: calc(100% / 6 - 5px);
 }
+@media only screen and (max-width: 768px) {
+  .main-menu-wrapper .main-menu li {
+    width: 100%;
+  }
+}
 .main-menu-wrapper .main-menu .menu-item {
   color: #fff;
 }
@@ -2039,6 +2083,11 @@ textarea {
   position: relative;
   top: -2px;
 }
+@media only screen and (max-width: 768px) {
+  .bottom {
+    padding: 20px;
+  }
+}
 
 .footer {
   padding-bottom: 40px;
@@ -2054,6 +2103,11 @@ textarea {
   left: 10px;
   position: absolute;
   width: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .footer .panel-pane:before {
+    display: none;
+  }
 }
 .footer .pane-title {
   border-bottom: none;
@@ -2106,12 +2160,35 @@ textarea {
 .footer .attachment-fourth .social-links a.icon-c:before {
   content: "\f0e0";
 }
+@media only screen and (max-width: 768px) {
+  .footer .attachment-fourth .social-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer .attachment-fourth .social-links a {
+    margin: 0 15px;
+  }
+}
 .footer .attachment-fourth .komunne a {
   background: url("../images/roskilde-kommune.png") no-repeat 0 0;
   display: block;
   height: 90px;
   margin-top: 100px;
   width: 274px;
+}
+@media only screen and (max-width: 768px) {
+  .footer .attachment-fourth .komunne a {
+    margin: 40px auto 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer .attachment-fourth {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
 }
 
 /* Events styles
@@ -2160,6 +2237,12 @@ textarea {
 .event-list .heading a {
   color: #2f2f2f;
   font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .event-list .event-list-heading,
+  .event-list .heading {
+    font-size: 100%;
+  }
 }
 .event-list .event-list-location,
 .event-list .event-list-time,
@@ -2381,7 +2464,22 @@ textarea {
 .news-list .news-link {
   margin-left: 170px;
 }
+@media only screen and (max-width: 768px) {
+  .news-list .news-link {
+    margin-left: 0;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .field-name-field-ding-news-materials .field-item,
+  .field-name-field-ding-event-materials .field-item,
+  .library-list .views-row,
+  .field-name-field-ding-page-materials .field-item,
+  .node-type-newsletter .newsletter-materials .field-item,
+  .news-list .news-list-item, .groups-list .groups-list-item {
+    padding: 20px;
+  }
+}
 /* Libraries styles
    ========================================================================== */
 .pane-ding-library-ding-library-libraries-list {
@@ -3294,6 +3392,27 @@ div[class^="collection-bg"],
   display: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(1),
+  .col9 .ding_nodelist-items .nb-item:nth-child(1),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(2),
+  .col9 .ding_nodelist-items .nb-item:nth-child(2),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(3),
+  .col9 .ding_nodelist-items .nb-item:nth-child(3),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(4),
+  .col9 .ding_nodelist-items .nb-item:nth-child(4),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(5),
+  .col9 .ding_nodelist-items .nb-item:nth-child(5),
+  .secondary-content .ding_nodelist-items .nb-item:nth-child(6),
+  .col9 .ding_nodelist-items .nb-item:nth-child(6) {
+    clear: both;
+    float: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+  }
+}
 /* Taxonomy page styles
    ========================================================================== */
 .pane-term-description .pane-title {

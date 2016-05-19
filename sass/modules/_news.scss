@@ -90,34 +90,34 @@
 .news-list .news-list-item,
 .groups-list .groups-list-item {
   padding: 0 20px 20px 0;
-  
+
   h2 {
     font-family: $base-font-family;
     font-weight: bold;
-    
+
     a {
       font-weight: bold;
     }
   }
-  
+
   .field-type-ting-abstract {
     margin: 20px 0;
   }
-  
+
   .field-type-ting-author {
     font-size: 90%;
     font-weight: bold;
-    
+
     a {
       font-weight: bold;
     }
   }
-  
+
   .subjects {
     .subject {
       font-size: 85%;
     }
-    
+
     a {
       padding: 2px 4px;
       display: inline;
@@ -128,11 +128,11 @@
 .taxonomy-dropdown,
 .pane-library-list {
   padding: 0 0 30px 0;
-  
+
   input[type=submit].button {
     display: none;
   }
-  
+
   label {
     font-weight: bold;
     margin-bottom: 10px;
@@ -146,4 +146,19 @@
 
 .news-list .news-link {
   margin-left: 170px;
+
+  @include small-medium() {
+    margin-left: 0;
+  }
+}
+
+@include small-medium() {
+  .field-name-field-ding-news-materials .field-item,
+  .field-name-field-ding-event-materials .field-item,
+  .library-list .views-row,
+  .field-name-field-ding-page-materials .field-item,
+  .node-type-newsletter .newsletter-materials .field-item,
+  .news-list .news-list-item, .groups-list .groups-list-item {
+    padding: 20px;
+  }
 }
