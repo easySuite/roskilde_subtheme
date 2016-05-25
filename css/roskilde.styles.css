@@ -2194,7 +2194,7 @@ textarea {
 /* Events styles
    ========================================================================== */
 .event-list-leaf {
-  background: #ec6608;
+  background: #4565ae;
   padding: 0;
 }
 .event-list-leaf .event-list-day,
@@ -3390,6 +3390,20 @@ div[class^="collection-bg"],
 }
 .ding_nodelist-single .node .item-date + div {
   display: none;
+}
+
+.ding_nodelist .media-play {
+  background: #00a1e0;
+}
+.ding_nodelist .media-play .icon-play {
+  color: #fff;
+}
+
+.ding_nodelist .has-video .media-container .close-media {
+  background: #00a1e0;
+}
+.ding_nodelist .has-video .media-container .close-media i {
+  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
