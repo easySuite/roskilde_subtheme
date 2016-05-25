@@ -111,6 +111,23 @@
   }
 }
 
+.ding_nodelist .media-play {
+  background: #00a1e0;
+
+  .icon-play {
+    color: $white;
+  }
+}
+
+
+.ding_nodelist .has-video .media-container .close-media {
+  background: #00a1e0;
+
+  i {
+    color: $white;
+  }
+}
+
 @include small-medium() {
   .secondary-content .ding_nodelist-items .nb-item:nth-child(1),
   .col9 .ding_nodelist-items .nb-item:nth-child(1),
