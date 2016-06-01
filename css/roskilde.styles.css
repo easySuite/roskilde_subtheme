@@ -2056,6 +2056,20 @@ textarea {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
+.navigation-wrapper .secondary-menu-wrapper {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .navigation-wrapper .secondary-menu-wrapper {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topbar-menu + .secondary-menu-wrapper {
+    display: none;
+  }
+}
 /* Footer styles
    ========================================================================== */
 .bottom {
@@ -2219,6 +2233,10 @@ textarea {
 .event-list {
   margin-top: 10px;
 }
+.event-list .event-list-item .event-image-wrapper {
+  margin-left: -10px;
+  margin-top: -10px;
+}
 .event-list .event-list-item:nth-child(odd),
 .event-list .event-list-item:nth-child(even) {
   background: #fff;
@@ -2231,6 +2249,7 @@ textarea {
   font-size: 180%;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
+  margin-top: 10px;
   padding-right: 75px;
 }
 .event-list .event-list-heading a,
@@ -3520,6 +3539,10 @@ div[class^="collection-bg"],
   font-size: 110%;
   font-weight: bold;
 }
+.pane-widget-block .day-number {
+  display: inline-block;
+  line-height: 36px;
+}
 .pane-widget-block .day-number a {
   border-radius: 50px;
   background: #ec6608;
@@ -3527,6 +3550,10 @@ div[class^="collection-bg"],
   font-weight: bold;
   padding: 8px;
   text-decoration: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
 }
 @media only screen and (max-width: 768px) {
   .pane-widget-block .day-number {

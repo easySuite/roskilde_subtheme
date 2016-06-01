@@ -30,6 +30,9 @@
   }
 
   .day-number {
+    display: inline-block;
+    line-height: 36px;
+
     a {
       border-radius: 50px;
       background: #ec6608;
@@ -37,6 +40,10 @@
       font-weight: bold;
       padding: 8px;
       text-decoration: none;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
     }
 
     @include small-medium() {

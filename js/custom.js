@@ -22,9 +22,14 @@
     $('.footer .attachment-fourth').html(customFooter);
   }
 
+  function mobileSecondaryMenu() {
+    $('.secondary-menu-wrapper').clone().appendTo($('.js-topbar-menu'));
+  }
+
   $(document).ready(function() {
     updateSelect();
     updateSubmenu();
     updateFooter();
+    mobileSecondaryMenu();
   });
 })(jQuery);

@@ -224,3 +224,17 @@ textarea {
 .topbar-menu .menu-item {
   font-family: $base-font-family;
 }
+
+.navigation-wrapper .secondary-menu-wrapper {
+  display: none;
+  
+  @include small-medium() {
+    display: block;
+  }
+}
+
+@include small-medium() {
+  .topbar-menu + .secondary-menu-wrapper {
+    display: none;
+  }
+}
