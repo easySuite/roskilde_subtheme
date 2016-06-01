@@ -2056,6 +2056,20 @@ textarea {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
+.navigation-wrapper .secondary-menu-wrapper {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .navigation-wrapper .secondary-menu-wrapper {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topbar-menu + .secondary-menu-wrapper {
+    display: none;
+  }
+}
 /* Footer styles
    ========================================================================== */
 .bottom {
@@ -2219,6 +2233,10 @@ textarea {
 .event-list {
   margin-top: 10px;
 }
+.event-list .event-list-item .event-image-wrapper {
+  margin-left: -10px;
+  margin-top: -10px;
+}
 .event-list .event-list-item:nth-child(odd),
 .event-list .event-list-item:nth-child(even) {
   background: #fff;
@@ -2231,6 +2249,7 @@ textarea {
   font-size: 180%;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
+  margin-top: 10px;
   padding-right: 75px;
 }
 .event-list .event-list-heading a,
