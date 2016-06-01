@@ -3539,6 +3539,10 @@ div[class^="collection-bg"],
   font-size: 110%;
   font-weight: bold;
 }
+.pane-widget-block .day-number {
+  display: inline-block;
+  line-height: 36px;
+}
 .pane-widget-block .day-number a {
   border-radius: 50px;
   background: #ec6608;
@@ -3546,6 +3550,10 @@ div[class^="collection-bg"],
   font-weight: bold;
   padding: 8px;
   text-decoration: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
 }
 @media only screen and (max-width: 768px) {
   .pane-widget-block .day-number {
