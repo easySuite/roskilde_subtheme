@@ -88,7 +88,7 @@
     }
 
     &:first-child + li + li + li a:before {
-      content: "\f1ab";
+      content: "\f0ac";
       font-size: 14px;
       display: inline-block;
       text-align: right;
@@ -123,6 +123,12 @@
     }
     
     .secondary-menu li:before {
+      display: none;
+    }
+  }
+  
+  @include large() {
+    li a span {
       display: none;
     }
   }
