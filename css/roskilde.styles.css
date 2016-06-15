@@ -1916,7 +1916,7 @@ table tbody:first-child tr:first-child td:first-child {
   -webkit-font-smoothing: antialiased;
 }
 .secondary-menu li:first-child + li + li + li a:before {
-  content: "\f1ab";
+  content: "\f0ac";
   font-size: 14px;
   display: inline-block;
   text-align: right;
@@ -1950,6 +1950,11 @@ table tbody:first-child tr:first-child td:first-child {
     margin: 10px;
   }
   .secondary-menu-wrapper .secondary-menu li:before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 940px) {
+  .secondary-menu-wrapper li a span {
     display: none;
   }
 }
