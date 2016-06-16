@@ -1538,6 +1538,7 @@ a:focus {
 body {
   background: #eee;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 #page {
