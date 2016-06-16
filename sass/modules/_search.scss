@@ -689,3 +689,47 @@ div[class^="collection-bg"],
 .pane-search-backends .selected-checkbox-group .selected-checkbox {
   padding: 5px 0;
 }
+
+@include small-medium() {
+  .pane-ting-object .field-name-ding-entity-buttons {
+    a {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  .ting-cover img {
+    max-width: 100%;
+  }
+
+  .page-search-ting .ting-object-left {
+    background: none;
+  }
+  
+  .pane-search-result .search-results .list .heading h2 {
+    font-size: 130%;
+  }
+}
+
+@include small() {
+  .ting-object-left {
+    display: none;
+  }
+  
+  .ting-object-right,
+  .pane-ting-object .ting-object-right  {
+    padding-left: 10px;
+    width: calc(100% - 10px);
+  }
+  
+  .pane-ting-object .field-name-ding-entity-buttons {
+    a {
+      margin: 0 auto 20px;
+      clear: both;
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+      width: 90%;
+    }
+  }
+}

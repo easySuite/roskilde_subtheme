@@ -40,6 +40,13 @@
         position: absolute;
         right: 0;
         width: 40%;
+        
+        @include small-medium() {
+          width: calc(100% - 40px);
+          height: 50%;
+          top: inherit;
+          bottom: 0;
+        }
       }
     }
   }

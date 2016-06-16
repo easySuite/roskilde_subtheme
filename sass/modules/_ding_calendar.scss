@@ -105,6 +105,30 @@
   #ding-calendar-wrapper > div + form {
     padding-top: 2px;
   }
+  
+  @include small() {
+    margin-left: -20px;
+    margin-right: -20px;
+    
+    #ding-calendar-container td {
+      font-size: 90%;
+      padding: 0;
+    }
+    
+    .day-number a {
+      font-size: 90%;
+      padding: 4px;
+    }
+    
+    .sticky-header {
+      background: $white;
+      border-bottom: 2px solid $blue;
+    }
+    
+    th {
+      font-size: 80%;
+    }
+  }
 }
 
 .pane-widget-view {
@@ -113,6 +137,15 @@
   .event-list-heading {
     @include small-medium() {
       font-size: 100%;
+    }
+  }
+  
+  @include small() {
+    margin-left: -20px;
+    margin-right: -20px;
+    
+    .event-image-wrapper {
+      display: none;
     }
   }
 }

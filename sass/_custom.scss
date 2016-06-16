@@ -309,7 +309,7 @@ label {
 .bookmark-button {
   border-radius: 0;
   font-weight: bold;
-  padding: 18px 50px;
+  padding: 18px 40px;
   margin-right: 0;
 }
 
@@ -341,4 +341,9 @@ table tbody:first-child tr:first-child td:first-child {
 
 .ui-dialog {
   background: #c7d650;
+}
+
+#tabs {
+  margin-bottom: 0;
+  padding: 20px 0;
 }
