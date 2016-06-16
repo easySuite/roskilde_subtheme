@@ -1809,7 +1809,7 @@ label {
 .bookmark-button {
   border-radius: 0;
   font-weight: bold;
-  padding: 18px 50px;
+  padding: 18px 40px;
   margin-right: 0;
 }
 
@@ -1837,6 +1837,11 @@ table tbody:first-child tr:first-child td:first-child {
 
 .ui-dialog {
   background: #c7d650;
+}
+
+#tabs {
+  margin-bottom: 0;
+  padding: 20px 0;
 }
 
 /* Header styles
@@ -3329,6 +3334,44 @@ div[class^="collection-bg"],
   padding: 5px 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .pane-ting-object .field-name-ding-entity-buttons a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ting-cover img {
+    max-width: 100%;
+  }
+
+  .page-search-ting .ting-object-left {
+    background: none;
+  }
+
+  .pane-search-result .search-results .list .heading h2 {
+    font-size: 130%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .ting-object-left {
+    display: none;
+  }
+
+  .ting-object-right,
+  .pane-ting-object .ting-object-right {
+    padding-left: 10px;
+    width: calc(100% - 10px);
+  }
+
+  .pane-ting-object .field-name-ding-entity-buttons a {
+    margin: 0 auto 20px;
+    clear: both;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+  }
+}
 /* Ding nodelist styles
    ========================================================================== */
 /*Nodes in blocks*/
@@ -3446,7 +3489,7 @@ div[class^="collection-bg"],
     clear: both;
     float: none;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 0;
     margin-right: 10px;
     width: 100%;
   }
@@ -3485,6 +3528,14 @@ div[class^="collection-bg"],
   position: absolute;
   right: 0;
   width: 40%;
+}
+@media only screen and (max-width: 768px) {
+  .page-taxonomy-term-60 .pane-term-description .pane-content .litteratur-wrapper {
+    width: calc(100% - 40px);
+    height: 50%;
+    top: inherit;
+    bottom: 0;
+  }
 }
 
 .page-taxonomy-term-66 .pane-term-description .pane-content {
@@ -3616,6 +3667,27 @@ div[class^="collection-bg"],
 .pane-widget-block #ding-calendar-wrapper > div + form {
   padding-top: 2px;
 }
+@media only screen and (max-width: 480px) {
+  .pane-widget-block {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .pane-widget-block #ding-calendar-container td {
+    font-size: 90%;
+    padding: 0;
+  }
+  .pane-widget-block .day-number a {
+    font-size: 90%;
+    padding: 4px;
+  }
+  .pane-widget-block .sticky-header {
+    background: #fff;
+    border-bottom: 2px solid #4565ae;
+  }
+  .pane-widget-block th {
+    font-size: 80%;
+  }
+}
 
 .pane-widget-view {
   clear: both;
@@ -3623,5 +3695,14 @@ div[class^="collection-bg"],
 @media only screen and (max-width: 768px) {
   .pane-widget-view .event-list-heading {
     font-size: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .pane-widget-view {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .pane-widget-view .event-image-wrapper {
+    display: none;
   }
 }
