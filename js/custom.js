@@ -26,10 +26,17 @@
     $('.secondary-menu-wrapper').clone().appendTo($('.js-topbar-menu'));
   }
 
+  function randomNodelistClasses() {
+    var classes = ["green", "yellow", "orange", "blue", "dark-blue", "pink", "violet"];
+    $('.ding_nodelist-node_blocks .nb-item').addClass(function(){ return classes[Math.floor(Math.random() * classes.length)]; });
+    
+  }
+
   $(document).ready(function() {
     updateSelect();
     updateSubmenu();
     updateFooter();
     mobileSecondaryMenu();
+    randomNodelistClasses();
   });
 })(jQuery);
