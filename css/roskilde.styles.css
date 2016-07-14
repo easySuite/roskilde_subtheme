@@ -1845,6 +1845,238 @@ table tbody:first-child tr:first-child td:first-child {
   padding: 20px 0;
 }
 
+/* Layout styles
+   ========================================================================== */
+/* Layouts
+   ========================================================================== */
+.frontpage-layout {
+  /* Media queries */
+}
+.frontpage-layout .col12 {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.frontpage-layout .col12 .col12 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.frontpage-layout .col3 {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col3.right {
+  float: right;
+  width: 25%;
+  margin-right: 0%;
+  margin-left: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col3.pre3 {
+  float: left;
+  width: 25%;
+  margin-left: 25%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col3.pre6 {
+  float: left;
+  width: 25%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col4 {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col4.right {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col4.pre4 {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col6 {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col6.right {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col6.pre3 {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col7 {
+  float: left;
+  width: 58.33333%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col7.right {
+  float: right;
+  width: 58.33333%;
+  margin-right: 0%;
+  margin-left: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col8 {
+  float: left;
+  width: 66.66667%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col8.right {
+  float: right;
+  width: 66.66667%;
+  margin-right: 0%;
+  margin-left: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col9 {
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.frontpage-layout .col9.right {
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .frontpage-layout .col12,
+  .frontpage-layout .col9,
+  .frontpage-layout .col9.right,
+  .frontpage-layout .col8,
+  .frontpage-layout .col8.right,
+  .frontpage-layout .col6,
+  .frontpage-layout .col6.right,
+  .frontpage-layout .col4,
+  .frontpage-layout .col4.right,
+  .frontpage-layout .col3,
+  .frontpage-layout .col3.right,
+  .frontpage-layout .col3.pre3,
+  .frontpage-layout .col3.pre6,
+  .frontpage-layout .col4.pre4,
+  .frontpage-layout .col6.pre3 {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+  }
+}
+
 /* Header styles
    ========================================================================== */
 .topbar-menu .menu-item {
