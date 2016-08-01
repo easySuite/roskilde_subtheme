@@ -3781,18 +3781,37 @@ div[class^="collection-bg"],
   color: #303030;
   text-decoration: none;
 }
-.ding_nodelist-single .node .item-date {
-  display: none;
-}
-.ding_nodelist-single .node .item-date + div {
-  display: none;
-}
 
 .ding_nodelist .media-play {
   background: #00a1e0;
 }
 .ding_nodelist .media-play .icon-play {
   color: #fff;
+}
+
+.ding_nodelist .node-title a,
+.ding_nodelist .node,
+.ding_nodelist.ding_nodelist-horizontal_accordion .data {
+  color: #333;
+}
+
+.ding_nodelist.ding_nodelist-vertical_accordion .node-title a {
+  color: #fff;
+}
+
+.ding_nodelist.ding_nodelist-single .article_image img,
+.ding_nodelist.ding_nodelist-single .event-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ding_nodelist-slider .legend {
+  margin-left: 20px;
+}
+
+.ding_nodelist-horizontal_accordion .expand {
+  bottom: 95px;
 }
 
 .ding_nodelist .has-video .media-container .close-media {
