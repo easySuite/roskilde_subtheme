@@ -4273,3 +4273,101 @@ div[class^="collection-bg"],
     display: none;
   }
 }
+
+/* Custom widgets styles
+   ========================================================================== */
+.litteratur-front-widget {
+  background: #fff;
+  margin-left: -20px;
+  position: relative;
+}
+.litteratur-front-widget .image-wrapper {
+  background: url(../images/f-lit.png) no-repeat 0 0;
+  background-size: 100% auto;
+  width: 100%;
+  height: 340px;
+}
+.litteratur-front-widget .inner-wrapper {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% - 40px);
+  height: 130px;
+  padding: 20px;
+}
+.litteratur-front-widget .inner-wrapper p {
+  height: 80px;
+  overflow: hidden;
+  line-height: 20px;
+  margin-right: 75px;
+}
+.litteratur-front-widget .see-more {
+  position: absolute;
+  right: 20px;
+  top: 230px;
+  display: block;
+  width: 67px;
+  height: 90px;
+  line-height: 90px;
+}
+.litteratur-front-widget .see-more:before {
+  content: "\f054";
+  display: block;
+  font-size: 100px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: 'FontAwesome';
+  text-shadow: none;
+  position: absolute;
+  left: 0;
+  color: #e4013a;
+}
+
+.fantasy-front-widget {
+  background: #fff;
+  margin-right: -20px;
+  position: relative;
+}
+.fantasy-front-widget .image-wrapper {
+  background: url(../images/f-fantasy.png) no-repeat 0 0;
+  background-size: 100% auto;
+  width: 100%;
+  height: 340px;
+}
+.fantasy-front-widget .inner-wrapper {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% - 40px);
+  height: 130px;
+  padding: 20px;
+}
+.fantasy-front-widget .inner-wrapper p {
+  height: 80px;
+  overflow: hidden;
+  line-height: 20px;
+  margin-right: 75px;
+}
+.fantasy-front-widget .see-more {
+  position: absolute;
+  right: 20px;
+  top: 230px;
+  display: block;
+  width: 67px;
+  height: 90px;
+  line-height: 90px;
+}
+.fantasy-front-widget .see-more:before {
+  content: "\f054";
+  display: block;
+  font-size: 100px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: 'FontAwesome';
+  text-shadow: none;
+  position: absolute;
+  left: 0;
+  color: #4666a0;
+}
