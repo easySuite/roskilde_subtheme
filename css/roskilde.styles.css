@@ -3694,7 +3694,7 @@ div[class^="collection-bg"],
 }
 
 .secondary-content .ding_nodelist-items .nb-item:nth-child(4),
-.ding_nodelist-items .nb-item:nth-child(4) {
+.col9 .ding_nodelist-items .nb-item:nth-child(4) {
   margin-top: 250px;
 }
 
