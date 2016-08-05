@@ -29,7 +29,6 @@
   function randomNodelistClasses() {
     var classes = ["green", "yellow", "orange", "blue", "dark-blue", "pink", "violet"];
     $('.ding_nodelist-node_blocks .nb-item').addClass(function(){ return classes[Math.floor(Math.random() * classes.length)]; });
-    
   }
 
   $(document).ready(function() {
