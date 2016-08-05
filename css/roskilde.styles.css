@@ -2948,6 +2948,9 @@ textarea {
   background: #fff;
   color: #00c2f4;
   padding: 10px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 40px;
 }
 .library-front.pane-campaign .ding-campaign-wrapper {
   position: relative;
