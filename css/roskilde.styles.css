@@ -4278,7 +4278,6 @@ div[class^="collection-bg"],
    ========================================================================== */
 .litteratur-front-widget {
   background: #fff;
-  margin-left: -20px;
   position: relative;
 }
 .litteratur-front-widget .image-wrapper {
@@ -4326,7 +4325,6 @@ div[class^="collection-bg"],
 
 .fantasy-front-widget {
   background: #fff;
-  margin-right: -20px;
   position: relative;
 }
 .fantasy-front-widget .image-wrapper {
