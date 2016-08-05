@@ -2944,16 +2944,16 @@ textarea {
   margin-top: 20px;
 }
 
-.library-front .pane-campaign {
+.library-front.pane-campaign {
   background: #fff;
   color: #00c2f4;
   padding: 10px 20px;
 }
-.library-front .pane-campaign .ding-campaign-wrapper {
+.library-front.pane-campaign .ding-campaign-wrapper {
   position: relative;
   padding-left: 50px;
 }
-.library-front .pane-campaign .ding-campaign-wrapper:before {
+.library-front.pane-campaign .ding-campaign-wrapper:before {
   content: "\f017";
   display: block;
   font-size: 31px;
