@@ -3693,6 +3693,27 @@ div[class^="collection-bg"],
   margin-top: 250px;
 }
 
+.secondary-content .ding_nodelist-items .nb-item:nth-child(4),
+.ding_nodelist-items .nb-item:nth-child(4) {
+  margin-top: 250px;
+}
+
+.primary-content .ding_nodelist-node_blocks,
+.col9 .ding_nodelist-node_blocks {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 2px solid #6d85be;
+  border-bottom: 2px solid #6d85be;
+}
+.primary-content .ding_nodelist-taxonomy .ding_nodelist-title,
+.col9 .ding_nodelist-taxonomy .ding_nodelist-title {
+  color: #4565ae;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news h3 a:before {
   content: "\f1ea";
   display: block;
@@ -3998,6 +4019,59 @@ div[class^="collection-bg"],
 }
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_page.pink .nb-inner {
   background: #e80034;
+}
+
+.ding_nodelist-taxonomy .item:nth-child(odd),
+.ding_nodelist-taxonomy .item:nth-child(even) {
+  background: #fff;
+  position: relative;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .item-list-image,
+.ding_nodelist-taxonomy .item:nth-child(even) .item-list-image {
+  position: absolute;
+  top: 0;
+  padding: 0;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .item-details,
+.ding_nodelist-taxonomy .item:nth-child(even) .item-details {
+  padding-left: 170px;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .item-title,
+.ding_nodelist-taxonomy .item:nth-child(even) .item-title {
+  font-size: 180%;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .item-title a,
+.ding_nodelist-taxonomy .item:nth-child(even) .item-title a {
+  font-weight: bold;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .item-body,
+.ding_nodelist-taxonomy .item:nth-child(even) .item-body {
+  font-size: 110%;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .news-link,
+.ding_nodelist-taxonomy .item:nth-child(even) .news-link {
+  float: none;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .news-link a,
+.ding_nodelist-taxonomy .item:nth-child(even) .news-link a {
+  font-weight: bold;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .date,
+.ding_nodelist-taxonomy .item:nth-child(odd) .author,
+.ding_nodelist-taxonomy .item:nth-child(even) .date,
+.ding_nodelist-taxonomy .item:nth-child(even) .author {
+  color: #2f2f2f;
+  font-size: 90%;
+  font-weight: bold;
+}
+.ding_nodelist-taxonomy .item:nth-child(odd) .date a,
+.ding_nodelist-taxonomy .item:nth-child(odd) .author a,
+.ding_nodelist-taxonomy .item:nth-child(even) .date a,
+.ding_nodelist-taxonomy .item:nth-child(even) .author a {
+  color: #2f2f2f;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
