@@ -131,6 +131,31 @@
   }
 }
 
+#calendar td.calendar-day.has-events,
+#calendar td.calendar-day.has-events.selected,
+#ding-calendar-container .navi-heading .next,
+#ding-calendar-container .navi-heading .prev {
+  background: none;
+}
+
+#ding-calendar-container .navi-heading .next {
+  color: #00c2f4;
+  text-decoration: none;
+  
+  &:before {
+    content: "\f061";
+  }
+}
+
+#ding-calendar-container .navi-heading .prev {
+  color: #00c2f4;
+  text-decoration: none;
+  
+  &:before {
+    content: "\f060";
+  }
+}
+
 .pane-widget-view {
   clear: both;
 
