@@ -3705,6 +3705,11 @@ div[class^="collection-bg"],
   border-top: 2px solid #6d85be;
   border-bottom: 2px solid #6d85be;
 }
+.primary-content .ding_nodelist-node_blocks .ding_nodelist-items,
+.col9 .ding_nodelist-node_blocks .ding_nodelist-items {
+  margin-left: -10px;
+  margin-right: -10px;
+}
 .primary-content .ding_nodelist-taxonomy .ding_nodelist-title,
 .col9 .ding_nodelist-taxonomy .ding_nodelist-title {
   color: #4565ae;
