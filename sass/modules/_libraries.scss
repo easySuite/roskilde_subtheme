@@ -227,3 +227,26 @@
     margin-top: 20px;
   }
 }
+
+.library-front .pane-campaign {
+  background: $white;
+  color: #00c2f4;
+  padding: 10px 20px;
+  
+  .ding-campaign-wrapper {
+    position: relative;
+    padding-left: 50px;
+    
+    &:before {
+      content: "\f017";
+      display: block;
+      font-size: 31px;
+      font-weight: normal;
+      margin-bottom: 10px;
+      font-family: 'FontAwesome';
+      text-shadow: none;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
