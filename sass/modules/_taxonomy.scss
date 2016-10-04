@@ -98,3 +98,18 @@
     padding-bottom: 20px;
   }
 }
+
+.pane-og-menu-og-single-menu-block {
+  margin-top: 20px;
+}
+
+.pane-campaign {
+  margin-top: 20px;
+}
+
+@include small-medium() {
+  .section-widget-wrapper {
+    width: calc(100% - 40px);
+    overflow: hidden;
+  }
+}

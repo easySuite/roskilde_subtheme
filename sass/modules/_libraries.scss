@@ -252,4 +252,12 @@
       left: 0;
     }
   }
+  
+  @include small-medium() {
+    padding: 10px;
+
+    .ding-campaign-wrapper {
+      display: block;
+    }
+  }
 }

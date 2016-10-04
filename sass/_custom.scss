@@ -314,9 +314,17 @@ label {
   margin-right: 0;
 }
 
-.search .form-actions, .search-field-in-content .form-actions, .user .form-actions,
+.search .form-actions,
+.search-field-in-content .form-actions,
+.user .form-actions,
 .search .form-submit {
   right: -10px;
+  
+  @include small-medium() {
+    right: 0;
+    width: 90%;
+    margin: 10px auto 0;
+  }
 }
 
 .material-item .action-button.reserve-button.unavailable.reservable:link, .material-item .action-button.reserve-button.unavailable.reservable:visited, .material-item .action-button.reserve-button.unavailable.reservable:focus, .material-item .action-button.reserve-button.unavailable.reservable:hover, .material-item .action-button.reserve-button.unavailable.reservable:active, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:link, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:visited, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active, .ding-periodical-issues .reserve-button.unavailable.reservable:link, .ding-periodical-issues .reserve-button.unavailable.reservable:visited, .ding-periodical-issues .reserve-button.unavailable.reservable:focus, .ding-periodical-issues .reserve-button.unavailable.reservable:hover, .ding-periodical-issues .reserve-button.unavailable.reservable:active {

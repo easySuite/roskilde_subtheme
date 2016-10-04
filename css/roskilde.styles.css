@@ -1,4 +1,23 @@
 /**
+ * Mixins
+ *
+ * @author magnify
+ */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Typography mixins
+ *
+ * These are mixins to allow for use in media queries
+   ========================================================================== */
+/* Availability
+   ========================================================================== */
+/* Pseudo arrow
+ *
+ * Usage example: pseudo-arrow(10px, #000, top, center, $offset: 20px)
+   ========================================================================== */
+/**
  * Variables
  *
  * @author magnify
@@ -1379,6 +1398,12 @@ ul.icons li [class*=" icon-"] {
   box-shadow: none;
   cursor: default;
 }
+@media only screen and (max-width: 480px) {
+  .field-name-ding-entity-buttons .reserve-button, .button-see-online, .ticket-available, .pane-reservations .renew-loan-button .renewable, .pane-loans .renew-loan-button .renewable, .pane-debts .renew-loan-button .renewable, .pane-bookmarks .renew-loan-button .renewable, .pane-social-services-lists .renew-loan-button .renewable, .pane-reservations .reserve-button, .pane-loans .reserve-button, .pane-debts .reserve-button, .pane-bookmarks .reserve-button, .pane-social-services-lists .reserve-button, .pane-reservations .update-reservations .form-submit, .pane-reservations .renew-loan-button .form-submit, .pane-loans .update-reservations .form-submit, .pane-loans .renew-loan-button .form-submit, .pane-debts .update-reservations .form-submit, .pane-debts .renew-loan-button .form-submit, .pane-bookmarks .update-reservations .form-submit, .pane-bookmarks .renew-loan-button .form-submit, .pane-social-services-lists .update-reservations .form-submit, .pane-social-services-lists .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .reserve-button, .ding-item-list-item .reserve-button, #ding-calendar-wrapper > div + div .form-item-calendar-search + input[type="submit"], #ding-calendar-wrapper > div + form .form-item-calendar-search + input[type="submit"], .material-item .action-button.reserve-button.unavailable.reservable:link, .material-item .action-button.reserve-button.unavailable.reservable:visited, .material-item .action-button.reserve-button.unavailable.reservable:focus, .material-item .action-button.reserve-button.unavailable.reservable:hover, .material-item .action-button.reserve-button.unavailable.reservable:active, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:link, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:visited, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active, .ding-periodical-issues .reserve-button.unavailable.reservable:link, .ding-periodical-issues .reserve-button.unavailable.reservable:visited, .ding-periodical-issues .reserve-button.unavailable.reservable:focus, .ding-periodical-issues .reserve-button.unavailable.reservable:hover, .ding-periodical-issues .reserve-button.unavailable.reservable:active {
+    display: block;
+    margin: 10px auto;
+  }
+}
 
 /* Mixins
    ========================================================================== */
@@ -1405,6 +1430,13 @@ a.button:active {
 a.button:hover {
   background-color: #1e1e1e;
   background-image: none;
+}
+@media only screen and (max-width: 480px) {
+  .button,
+  a.button {
+    display: block;
+    margin: 10px auto;
+  }
 }
 
 /* Default button */
@@ -1514,25 +1546,6 @@ a:focus {
   background-color: #3e3e3e;
 }
 
-/**
- * Mixins
- *
- * @author magnify
- */
-/* Media query
-   ========================================================================== */
-/* Breakpoints
-   ========================================================================== */
-/* Typography mixins
- *
- * These are mixins to allow for use in media queries
-   ========================================================================== */
-/* Availability
-   ========================================================================== */
-/* Pseudo arrow
- *
- * Usage example: pseudo-arrow(10px, #000, top, center, $offset: 20px)
-   ========================================================================== */
 /* Standard color definitions
    ========================================================================== */
 body {
@@ -1814,9 +1827,21 @@ label {
   margin-right: 0;
 }
 
-.search .form-actions, .search-field-in-content .form-actions, .user .form-actions,
+.search .form-actions,
+.search-field-in-content .form-actions,
+.user .form-actions,
 .search .form-submit {
   right: -10px;
+}
+@media only screen and (max-width: 768px) {
+  .search .form-actions,
+  .search-field-in-content .form-actions,
+  .user .form-actions,
+  .search .form-submit {
+    right: 0;
+    width: 90%;
+    margin: 10px auto 0;
+  }
 }
 
 .table-bordered thead:first-child tr:first-child th:first-child,
@@ -2074,9 +2099,17 @@ table tbody:first-child tr:first-child td:first-child {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     clear: both;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .default-layout .primary-content, .default-layout .secondary-content, .default-layout .tertiary-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /* Header styles
    ========================================================================== */
 .topbar-menu .menu-item {
@@ -2967,6 +3000,14 @@ textarea {
   position: absolute;
   left: 0;
 }
+@media only screen and (max-width: 768px) {
+  .library-front.pane-campaign {
+    padding: 10px;
+  }
+  .library-front.pane-campaign .ding-campaign-wrapper {
+    display: block;
+  }
+}
 
 /* Search styles
    ========================================================================== */
@@ -3628,6 +3669,12 @@ div[class^="collection-bg"],
     padding-right: 0;
     width: 90%;
   }
+
+  .button, a.button, .form-submit, #edit-cancel, .field-name-ding-entity-buttons .action-button, .bookmark-button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
 }
 /* Ding nodelist styles
    ========================================================================== */
@@ -3796,6 +3843,11 @@ div[class^="collection-bg"],
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-inner a:before {
   color: #2d2e2f;
 }
+@media only screen and (max-width: 768px) {
+  .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-inner {
+    background: transparent;
+  }
+}
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_event .nb-inner {
   color: #2d2e2f;
 }
@@ -3878,14 +3930,12 @@ div[class^="collection-bg"],
 
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-news-body {
   padding: 10px;
-  max-width: calc(100% - 20px);
+  width: calc(100% - 20px);
 }
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news h3 {
-  height: 70px;
+  height: 110px;
   margin-bottom: 0;
   line-height: 1.2em;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-event-summary {
   height: 26px;
@@ -4040,6 +4090,12 @@ div[class^="collection-bg"],
 .ding_nodelist-taxonomy .item:nth-child(odd) .item-details,
 .ding_nodelist-taxonomy .item:nth-child(even) .item-details {
   padding-left: 170px;
+}
+@media only screen and (max-width: 768px) {
+  .ding_nodelist-taxonomy .item:nth-child(odd) .item-details,
+  .ding_nodelist-taxonomy .item:nth-child(even) .item-details {
+    padding-left: 10px;
+  }
 }
 .ding_nodelist-taxonomy .item:nth-child(odd) .item-title,
 .ding_nodelist-taxonomy .item:nth-child(even) .item-title {
@@ -4198,6 +4254,20 @@ div[class^="collection-bg"],
   padding-bottom: 20px;
 }
 
+.pane-og-menu-og-single-menu-block {
+  margin-top: 20px;
+}
+
+.pane-campaign {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-widget-wrapper {
+    width: calc(100% - 40px);
+    overflow: hidden;
+  }
+}
 /* Ding calendar styles
    ========================================================================== */
 .pane-widget-block #ding-calendar-wrapper h2 {
@@ -4344,15 +4414,32 @@ div[class^="collection-bg"],
   }
 }
 @media only screen and (max-width: 480px) {
-  .pane-widget-view {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
   .pane-widget-view .event-image-wrapper {
     display: none;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #calendar td {
+    width: auto;
+  }
+
+  .pane-widget-block table {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+
+  #ding-calendar-wrapper > div + div .form-item-calendar-search,
+  #ding-calendar-wrapper > div + form .form-item-calendar-search {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+
+  .pane-ding-event-ding-event-list-frontpage {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
 /* Custom widgets styles
    ========================================================================== */
 .litteratur-front-widget {

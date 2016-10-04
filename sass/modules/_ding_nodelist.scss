@@ -140,6 +140,10 @@
         color: #2d2e2f;
       }
     }
+    
+    @include small-medium() {
+      background: transparent;
+    }
   }
 
   .nb-item.ding_event .nb-inner {
@@ -238,15 +242,13 @@
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news {
   .nb-news-body {
     padding: 10px;
-    max-width: calc(100% - 20px);
+    width: calc(100% - 20px);
   }
 
   h3 {
-    height: 70px;
+    height: 110px;
     margin-bottom: 0;
     line-height: 1.2em;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .nb-event-summary {
@@ -561,6 +563,10 @@
     
     .item-details {
       padding-left: 170px;
+      
+      @include small-medium() {
+        padding-left: 10px;
+      }
     }
     
     .item-title {

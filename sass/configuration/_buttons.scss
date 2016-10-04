@@ -61,6 +61,11 @@ $button-danger-color:             #fff;
 
     cursor: default;
   }
+  
+  @include small() {
+    display: block;
+    margin: 10px auto;
+  }
 }
 
 
@@ -117,6 +122,11 @@ a.button,
   &:hover {
     background-color: $button-default-color-hover;
     background-image: none;
+  }
+  
+  @include small() {
+    display: block;
+    margin: 10px auto;
   }
 }
 

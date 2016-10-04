@@ -54,6 +54,18 @@
     .col6.pre3 {
       @include zen-grid-item(12, 1);
       clear: both;
+      
+      padding-left: 0;
+      padding-right: 0;
     }
+  }
+}
+
+@include small-medium() {
+  .default-layout .primary-content,
+  .default-layout .secondary-content,
+  .default-layout .tertiary-content {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

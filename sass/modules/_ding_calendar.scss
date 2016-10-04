@@ -166,11 +166,30 @@
   }
   
   @include small() {
-    margin-left: -20px;
-    margin-right: -20px;
-    
     .event-image-wrapper {
       display: none;
     }
+  }
+}
+
+@include small-medium() {
+  #calendar td {
+    width: auto;
+  }
+  
+  .pane-widget-block table {
+    width: calc(100% - 20px);
+    margin: 0 10px; 
+  }
+  
+  #ding-calendar-wrapper > div + div .form-item-calendar-search,
+  #ding-calendar-wrapper > div + form .form-item-calendar-search {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+  
+  .pane-ding-event-ding-event-list-frontpage {
+    margin-left: -10px;
+    margin-right: -10px;
   }
 }
