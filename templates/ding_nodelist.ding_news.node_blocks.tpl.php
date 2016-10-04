@@ -5,7 +5,7 @@
  */
 $lead = field_get_items('node', $item, 'field_' . $item->type . '_lead');
 $teaser = field_get_items('node', $item, 'field_' . $item->type . '_body');
-$image_field = 'field_' . $item->type . '_title_image';
+$image_field = 'field_' . $item->type . '_list_image';
 $image = _ding_nodelist_get_dams_image_info($item, $image_field);
 ?>
 <div class="nb-item <?php print $item->type; ?>">

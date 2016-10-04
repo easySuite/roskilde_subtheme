@@ -732,4 +732,14 @@ div[class^="collection-bg"],
       width: 90%;
     }
   }
+  
+  .button, a.button,
+  .form-submit,
+  #edit-cancel,
+  .field-name-ding-entity-buttons .action-button,
+  .bookmark-button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
 }

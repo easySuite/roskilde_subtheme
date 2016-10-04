@@ -13,6 +13,10 @@
 // Grid - http://zengrids.com
 @import "zen-grids";
 
+
+// Include framework
+@import "../../../../../profiles/ding2/themes/ddbasic/sass/framework/_mixins";
+
 // Include configuration
 @import "../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_variables";
 @import "configuration/_colors";
@@ -21,8 +25,6 @@
 @import "../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration";
 
 
-// Include framework
-@import "../../../../../profiles/ding2/themes/ddbasic/sass/framework/_mixins";
 
 // Custom theme styles
 @import "_custom";
