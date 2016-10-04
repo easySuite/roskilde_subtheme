@@ -110,6 +110,6 @@
 @include small-medium() {
   .section-widget-wrapper {
     width: calc(100% - 40px);
-	overflow: hidden;
+    overflow: hidden;
   }
 }

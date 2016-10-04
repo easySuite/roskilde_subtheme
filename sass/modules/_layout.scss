@@ -62,7 +62,9 @@
 }
 
 @include small-medium() {
-  .default-layout .primary-content, .default-layout .secondary-content, .default-layout .tertiary-content {
+  .default-layout .primary-content,
+  .default-layout .secondary-content,
+  .default-layout .tertiary-content {
     padding-left: 0;
     padding-right: 0;
   }
