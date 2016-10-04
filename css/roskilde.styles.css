@@ -2105,7 +2105,9 @@ table tbody:first-child tr:first-child td:first-child {
 }
 
 @media only screen and (max-width: 768px) {
-  .default-layout .primary-content, .default-layout .secondary-content, .default-layout .tertiary-content {
+  .default-layout .primary-content,
+  .default-layout .secondary-content,
+  .default-layout .tertiary-content {
     padding-left: 0;
     padding-right: 0;
   }
@@ -3650,6 +3652,19 @@ div[class^="collection-bg"],
     font-size: 130%;
   }
 }
+.pane-reservations .ting-cover img,
+.pane-loans .ting-cover img,
+.pane-debts .ting-cover img,
+.pane-bookmarks .ting-cover img {
+  max-width: 100%;
+}
+.pane-reservations .ting-cover:before,
+.pane-loans .ting-cover:before,
+.pane-debts .ting-cover:before,
+.pane-bookmarks .ting-cover:before {
+  left: 50%;
+}
+
 @media only screen and (max-width: 480px) {
   .ting-object-left {
     display: none;
@@ -3670,7 +3685,11 @@ div[class^="collection-bg"],
     width: 90%;
   }
 
-  .button, a.button, .form-submit, #edit-cancel, .field-name-ding-entity-buttons .action-button, .bookmark-button {
+  .button, a.button,
+  .form-submit,
+  #edit-cancel,
+  .field-name-ding-entity-buttons .action-button,
+  .bookmark-button {
     display: block;
     margin: 10px auto;
     text-align: center;

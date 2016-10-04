@@ -711,6 +711,21 @@ div[class^="collection-bg"],
   }
 }
 
+.pane-reservations,
+.pane-loans,
+.pane-debts,
+.pane-bookmarks {
+  .ting-cover {
+    img {
+      max-width: 100%;
+    }
+
+    &:before {
+      left: 50%;
+    }
+  }
+}
+
 @include small() {
   .ting-object-left {
     display: none;
