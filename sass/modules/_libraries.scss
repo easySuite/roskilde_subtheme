@@ -135,6 +135,26 @@
         background: none;
         font-family: $base-font-family;
         margin-top: -63px;
+        
+        @include small-medium() {
+          @include zen-grid-item(12, 1);
+          clear: both;
+          float: none;
+          margin-top: 10px;
+        }
+      }
+      
+      .name {
+        background: none;
+      }
+      
+      @include small-medium() {
+        width: 96%;
+        margin: 0 auto;
+        
+        .notice-star {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -259,5 +279,29 @@
     .ding-campaign-wrapper {
       display: block;
     }
+  }
+}
+
+@include small-medium() {
+  .js-og-sub-menu-responsive {
+    height: 50px;
+    margin: 0 auto;
+    min-width: 96%;
+  }
+  
+  .select2-container--default .select2-selection--single {
+    width: 100%;
+  }
+  
+  .select2-container {
+    width: 100% !important;
+  }
+  
+  .opening-hours-week .name {
+    background: none;
+  }
+  
+  .opening-hours-week .notice-star {
+    margin-right: 0;
   }
 }
