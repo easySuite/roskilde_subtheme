@@ -214,6 +214,18 @@ textarea {
       
       @include small-medium() {
         width: 100%;
+        border-bottom: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        padding-top: 2px;
+        padding-bottom: 12px;
+        
+        &:first-child {
+          border: none;
+        }
+        
+        .link-description:empty {
+          display: none;
+        }
       }
     }
     .menu-item {
@@ -223,6 +235,10 @@ textarea {
     .link-description {
       color: $white;
       margin-top: 10px;
+      
+      @include small-medium() {
+        margin-bottom: 0;
+      }
     }
   }
 }
