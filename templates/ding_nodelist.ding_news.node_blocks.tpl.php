@@ -10,7 +10,7 @@ $image = _ding_nodelist_get_dams_image_info($item, $image_field);
 ?>
 <div class="nb-item <?php print $item->type; ?>">
   <div class="nb-inner">
-    <div class="nb-news-image"><?php print $image ? theme('image_style', array_merge($image, array('style_name' => 'ding_nodelist_medium'))) : ''; ?></div>
+    <div class="nb-news-image"><?php print $image ? theme('image_style', array_merge($image, array('style_name' => 'ding_nodelist_nb'))) : ''; ?></div>
     <div class="nb-news-body">
       <h3><?php print l($item->title, 'node/' . $item->nid); ?></h3>
       <div class="nb-event-summary">
