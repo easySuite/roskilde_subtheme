@@ -1,0 +1,31 @@
+div.pane-reservations .ting-cover:before,
+div.pane-loans .ting-cover:before,
+div.pane-debts .ting-cover:before,
+div.pane-bookmarks .ting-cover:before {
+  font-size: 50px;
+  top: 50%;
+}
+
+.page-user {
+  input[type='text'],
+  input[type='password'],
+  input[type='date'],
+  input[type='datetime'],
+  input[type='email'],
+  input[type='number'],
+  input[type='search'],
+  input[type='tel'],
+  input[type='time'],
+  input[type='url'],
+  textarea {
+    border-radius: 0;
+  }
+}
+
+#ding-reservation-delete-reservations-form {
+  padding-bottom: 20px;
+
+  > div > div {
+    margin-bottom: 40px;
+  }
+}

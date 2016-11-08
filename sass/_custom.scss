@@ -52,6 +52,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+strong {
+  font-family: $base-font-family;
+  font-weight: bold;
+}
+
 .default-layout .layout-wrapper {
   background: none;
   padding-left: 0;
@@ -129,7 +134,8 @@ h1, h2, h3, h4, h5, h6 {
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a,
 .subjects .subject a,
 .news-list .news-label a,
-.super-heading .field-name-field-ding-news-library .field-item a {
+.super-heading .field-name-field-ding-news-library .field-item a,
+.page-tags a.label {
   background: #ab398e;
   border-radius: 0;
   font-size: 85%;
@@ -137,6 +143,12 @@ h1, h2, h3, h4, h5, h6 {
   &:hover {
     background: #a03585;
   }
+}
+
+.page-tags a.label {
+  color: $white;
+  font-size: 75%;
+  padding: 2px;
 }
 
 .label,
@@ -304,10 +316,13 @@ label {
   width: 73%;
 }
 
-.button, a.button,
-.form-submit, #edit-cancel,
+.button,
+a.button,
+.form-submit,
+#edit-cancel,
 .field-name-ding-entity-buttons .action-button,
-.bookmark-button {
+.bookmark-button,
+#edit-delete {
   border-radius: 0;
   font-weight: bold;
   padding: 18px 40px;
@@ -318,13 +333,18 @@ label {
 .search-field-in-content .form-actions,
 .user .form-actions,
 .search .form-submit {
-  right: -10px;
   
   @include small-medium() {
     right: 0;
     width: 90%;
     margin: 10px auto 0;
   }
+}
+
+.page-search .search .form-actions > a {
+  height: 50px;
+  line-height: 50px;
+  min-height: 50px;
 }
 
 .material-item .action-button.reserve-button.unavailable.reservable:link, .material-item .action-button.reserve-button.unavailable.reservable:visited, .material-item .action-button.reserve-button.unavailable.reservable:focus, .material-item .action-button.reserve-button.unavailable.reservable:hover, .material-item .action-button.reserve-button.unavailable.reservable:active, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:link, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:visited, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active, .ding-periodical-issues .reserve-button.unavailable.reservable:link, .ding-periodical-issues .reserve-button.unavailable.reservable:visited, .ding-periodical-issues .reserve-button.unavailable.reservable:focus, .ding-periodical-issues .reserve-button.unavailable.reservable:hover, .ding-periodical-issues .reserve-button.unavailable.reservable:active {
