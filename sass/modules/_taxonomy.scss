@@ -103,6 +103,40 @@
   margin-top: 20px;
 }
 
+[class^="pane-menu-block"],
+[class*=" pane-menu-block"] {
+  .pane-title {
+    color: #4b4b4b;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid #8e8e8e;
+    font-size: 130%;
+    line-height: 45px;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+  }
+  
+  .menu {
+    padding-top: 20px;
+    padding-left: 0;
+    
+    > li {
+      border-bottom: 1px solid #efefef;
+      padding-top: 0;
+      padding-right: 0;
+      
+      a {
+        color: #00a1e3;
+        display: block;
+        font-weight: bold;
+        padding-left: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
 .pane-campaign {
   margin-top: 20px;
 }
