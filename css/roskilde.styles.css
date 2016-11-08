@@ -1579,6 +1579,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: bold;
 }
 
+strong {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+}
+
 .default-layout .layout-wrapper {
   background: none;
   padding-left: 0;
@@ -1653,7 +1658,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a,
 .subjects .subject a,
 .news-list .news-label a,
-.super-heading .field-name-field-ding-news-library .field-item a {
+.super-heading .field-name-field-ding-news-library .field-item a,
+.page-tags a.label {
   background: #ab398e;
   border-radius: 0;
   font-size: 85%;
@@ -1663,8 +1669,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover,
 .subjects .subject a:hover,
 .news-list .news-label a:hover,
-.super-heading .field-name-field-ding-news-library .field-item a:hover {
+.super-heading .field-name-field-ding-news-library .field-item a:hover,
+.page-tags a.label:hover {
   background: #a03585;
+}
+
+.page-tags a.label {
+  color: #fff;
+  font-size: 75%;
+  padding: 2px;
 }
 
 .label,
@@ -1817,22 +1830,19 @@ label {
   width: 73%;
 }
 
-.button, a.button,
-.form-submit, #edit-cancel,
+.button,
+a.button,
+.form-submit,
+#edit-cancel,
 .field-name-ding-entity-buttons .action-button,
-.bookmark-button {
+.bookmark-button,
+#edit-delete {
   border-radius: 0;
   font-weight: bold;
   padding: 18px 40px;
   margin-right: 0;
 }
 
-.search .form-actions,
-.search-field-in-content .form-actions,
-.user .form-actions,
-.search .form-submit {
-  right: -10px;
-}
 @media only screen and (max-width: 768px) {
   .search .form-actions,
   .search-field-in-content .form-actions,
@@ -1842,6 +1852,12 @@ label {
     width: 90%;
     margin: 10px auto 0;
   }
+}
+
+.page-search .search .form-actions > a {
+  height: 50px;
+  line-height: 50px;
+  min-height: 50px;
 }
 
 .table-bordered thead:first-child tr:first-child th:first-child,
@@ -4017,7 +4033,7 @@ div[class^="collection-bg"],
   width: calc(100% - 20px);
 }
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news h3 {
-  height: 110px;
+  max-height: 110px;
   margin-bottom: 0;
   line-height: 1.2em;
 }
@@ -4342,6 +4358,38 @@ div[class^="collection-bg"],
   margin-top: 20px;
 }
 
+[class^="pane-menu-block"] .pane-title,
+[class*=" pane-menu-block"] .pane-title {
+  color: #4b4b4b;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #8e8e8e;
+  font-size: 130%;
+  line-height: 45px;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+}
+[class^="pane-menu-block"] .menu,
+[class*=" pane-menu-block"] .menu {
+  padding-top: 20px;
+  padding-left: 0;
+}
+[class^="pane-menu-block"] .menu > li,
+[class*=" pane-menu-block"] .menu > li {
+  border-bottom: 1px solid #efefef;
+  padding-top: 0;
+  padding-right: 0;
+}
+[class^="pane-menu-block"] .menu > li a,
+[class*=" pane-menu-block"] .menu > li a {
+  color: #00a1e3;
+  display: block;
+  font-weight: bold;
+  padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .pane-campaign {
   margin-top: 20px;
 }
@@ -4622,4 +4670,33 @@ div[class^="collection-bg"],
   position: absolute;
   left: 0;
   color: #4666a0;
+}
+
+div.pane-reservations .ting-cover:before,
+div.pane-loans .ting-cover:before,
+div.pane-debts .ting-cover:before,
+div.pane-bookmarks .ting-cover:before {
+  font-size: 50px;
+  top: 50%;
+}
+
+.page-user input[type='text'],
+.page-user input[type='password'],
+.page-user input[type='date'],
+.page-user input[type='datetime'],
+.page-user input[type='email'],
+.page-user input[type='number'],
+.page-user input[type='search'],
+.page-user input[type='tel'],
+.page-user input[type='time'],
+.page-user input[type='url'],
+.page-user textarea {
+  border-radius: 0;
+}
+
+#ding-reservation-delete-reservations-form {
+  padding-bottom: 20px;
+}
+#ding-reservation-delete-reservations-form > div > div {
+  margin-bottom: 40px;
 }
