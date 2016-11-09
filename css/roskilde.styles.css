@@ -3905,7 +3905,7 @@ div[class^="collection-bg"],
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-news-image img {
   height: 100%;
   max-width: inherit;
-  width: auto;
+  width: 100%;
 }
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-news-body {
   position: absolute;
