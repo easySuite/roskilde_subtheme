@@ -1640,6 +1640,15 @@ strong {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
 }
+.sub-menu > li ul.menu {
+  padding-top: 0;
+  padding-left: 22px;
+}
+.sub-menu > li ul.menu a.active {
+  color: #2f2f2f;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+}
 .sub-menu li:before {
   display: none;
 }
