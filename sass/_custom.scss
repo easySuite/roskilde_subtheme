@@ -111,6 +111,17 @@ strong {
         font-weight: bold;
       }
     }
+
+    ul.menu {
+      padding-top: 0;
+      padding-left: 22px;
+
+      a.active {
+        color: $gray-dark;
+        font-family: $base-font-family;
+        font-weight: bold;
+      }
+    }
   }
 
   li {
