@@ -2277,7 +2277,7 @@ table tbody:first-child tr:first-child td:first-child {
 }
 
 .header-wrapper .header-inner > section {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-top: 30px;
 }
 
@@ -4708,4 +4708,8 @@ div.pane-bookmarks .ting-cover:before {
 }
 #ding-reservation-delete-reservations-form > div > div {
   margin-bottom: 40px;
+}
+
+.header-wrapper .header-inner > section.wayf-wrapper {
+  bottom: -30px;
 }
