@@ -41,7 +41,12 @@ $teaser = field_get_items('node', $item, 'field_' . $item->type . '_body');
           $fee_field = field_get_items('node', $item, 'field_ding_event_price');
           if (is_array($fee_field)) {
             $fee = current($fee_field);
-            print $fee['value'] . ' ' . t('kr.');
+            if (!empty($fee['value'])) {
+              print $fee['value'] . ' ' . t('kr.');
+            }
+            else {
+              print t('Free');
+            }
           }
           else {
             print t('Free');
