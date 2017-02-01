@@ -16,7 +16,7 @@ $teaser = field_get_items('node', $item, 'field_' . $item->type . '_body');
   <div class="nb-inner">
     <div class="nb-inner-wrapper">
       <div class="nb-event-date">
-        <?php print t(date('d. F Y', $event_date)); ?>
+        <?php print format_date($event_date, 'ding_long_date_only'); ?>
       </div>
       <h3><?php print l($item->title, 'node/' . $item->nid); ?></h3>
       <div class="nb-event-summary">
