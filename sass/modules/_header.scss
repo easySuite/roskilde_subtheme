@@ -153,6 +153,16 @@
   }
 }
 
+.header-wrapper .header-inner {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
 .header-wrapper .header-inner > section {
   padding-bottom: 40px;
   padding-top: 30px;
@@ -170,6 +180,9 @@
 .search-field-in-content .form-submit,
 .user .form-submit {
   border-radius: 0;
+  @include small-medium() {
+    margin-top: 0;
+   }
 }
 
 .search input.form-submit {

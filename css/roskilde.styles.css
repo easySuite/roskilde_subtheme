@@ -2276,6 +2276,14 @@ table tbody:first-child tr:first-child td:first-child {
   }
 }
 
+.header-wrapper .header-inner:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 .header-wrapper .header-inner > section {
   padding-bottom: 40px;
   padding-top: 30px;
@@ -2293,6 +2301,16 @@ table tbody:first-child tr:first-child td:first-child {
 .search-field-in-content .form-submit,
 .user .form-submit {
   border-radius: 0;
+}
+@media only screen and (max-width: 768px) {
+  .search .form-text,
+  .search-field-in-content .form-text,
+  .user .form-text,
+  .search .form-submit,
+  .search-field-in-content .form-submit,
+  .user .form-submit {
+    margin-top: 0;
+  }
 }
 
 .search input.form-submit {
@@ -4707,9 +4725,48 @@ div.pane-bookmarks .ting-cover:before {
   padding-bottom: 20px;
 }
 #ding-reservation-delete-reservations-form > div > div {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .header-wrapper .header-inner > section.wayf-wrapper {
+  margin: 0 auto;
   bottom: -30px;
+}
+@media only screen and (max-width: 768px) {
+  .header-wrapper .header-inner > section.wayf-wrapper {
+    padding: 0;
+    height: auto;
+    position: static;
+    display: table-row;
+  }
+  .header-wrapper .header-inner > section.wayf-wrapper > .panel-pane.pane-block {
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 100px;
+    max-width: 50%;
+  }
+  .header-wrapper .header-inner > section.wayf-wrapper > .panel-pane.pane-block .pane-content > div {
+    margin: 5px;
+  }
+  .header-wrapper .header-inner > section.wayf-wrapper > .panel-pane.pane-block:nth-child(odd) .pane-content > div {
+    margin-left: 30px;
+  }
+  .header-wrapper .header-inner > section.wayf-wrapper > .panel-pane.pane-block:nth-child(even) .pane-content > div {
+    margin-right: 30px;
+  }
+  .header-wrapper .header-inner > section.wayf-wrapper .pane-ding-gatewayf-registration-registration .ding-gatewayf--registration {
+    min-width: 100px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .header-wrapper .header-inner > section.wayf-wrapper {
+    margin: 0;
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-wrapper .header-inner > section.user {
+    padding-bottom: 0px;
+  }
 }

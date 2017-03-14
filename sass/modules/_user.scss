@@ -26,10 +26,58 @@ div.pane-bookmarks .ting-cover:before {
   padding-bottom: 20px;
 
   > div > div {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
 .header-wrapper .header-inner > section.wayf-wrapper {
+  margin: 0 auto;
   bottom: -30px;
+
+  @include small-medium() {
+    padding: 0;
+    height: auto;
+    position: static;
+    display: table-row;
+
+    & > .panel-pane.pane-block {
+      display: table-cell;
+      vertical-align: middle;
+      min-width: 100px;
+      max-width: 50%;
+
+      .pane-content > div {
+          margin: 5px;
+      }
+
+      &:nth-child(odd) {
+        .pane-content > div {
+          margin-left: 30px;
+        }
+      }
+
+      &:nth-child(even) {
+        .pane-content > div {
+        margin-right: 30px;
+        }
+      }
+    }
+
+    .pane-ding-gatewayf-registration-registration {
+      .ding-gatewayf--registration {
+        min-width: 100px;
+      }
+    }
+  }
+
+  @include medium() {
+    margin: 0;
+    float: right;
+  }
+}
+
+.header-wrapper .header-inner > section.user {
+  @include small-medium() {
+   padding-bottom: 0px;
+  }
 }
