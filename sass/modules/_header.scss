@@ -1,5 +1,7 @@
 /* Header styles
    ========================================================================== */
+$zen-columns:             12;
+$zen-gutters:             20px;
 
 .topbar-menu {
   .menu-item {
@@ -222,9 +224,6 @@ textarea {
 
   .main-menu {
     li {
-      display: inline-block;
-      width: calc(100% / 6 - 5px);
-      
       @include small-medium() {
         width: 100%;
         border-bottom: 0;
@@ -254,6 +253,51 @@ textarea {
       }
     }
   }
+
+  ul.main-menu {
+    width: 100%;
+
+    &:after {
+     content: ".";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+    }
+
+    li:first-child:nth-last-child(6),
+    li:first-child:nth-last-child(6) ~ li {
+      //display: inline-block;
+      float: left;
+      width: calc(100% / 6 - 10px);
+      @include small-medium() {
+        width: inherit;
+        a {
+          font-size: 22px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    li:first-child:nth-last-child(7),
+    li:first-child:nth-last-child(7) ~ li {
+      //display: inline-block;
+      float: left;
+      width: calc(100% / 7 - 10px);
+      @include small-medium() {
+        width: inherit;
+        a {
+          font-size: 22px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    li a.menu-item {
+      font-size: inherit;
+      font-weight: normal;
+    }
+  }
 }
 
 .topbar-menu .menu-item {
@@ -271,5 +315,51 @@ textarea {
 @include small-medium() {
   .topbar-menu + .secondary-menu-wrapper {
     display: none;
+  }
+}
+
+.topbar {
+  .secondary-menu-wrapper {
+    margin: 106px 0 0 0;
+    width: auto;
+
+    ul.secondary-menu {
+     li {
+     padding-bottom: 0px;
+        a.menu-item {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+ .topbar-inner .pane-notifications-top-menu {
+     @include zen-grid-item(2, 0, left);
+     width: auto;
+     margin-left: -38px;
+
+   .pane-notifications-top-menu {
+      margin-top: 49px;
+    }
+  }
+}
+
+.responsive-layout-tablet .pane-notifications-top-menu,
+.responsive-layout-mobile .pane-notifications-top-menu {
+  display: none;
+}
+
+.responsive-layout-tablet {
+  .secondary-menu-wrapper {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 315px;
+
+    ul.secondary-menu {
+      li {
+        display: inline-block;
+      }
+    }
   }
 }
