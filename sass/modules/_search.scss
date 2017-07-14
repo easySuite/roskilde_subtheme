@@ -757,8 +757,8 @@ div[class^="collection-bg"],
     text-align: center;
   }
 }
-
-.ding-list-add-button {
+.pane-content .ding-list-add-button,
+.ting-object .field-item .ding-list-add-button {
   a.trigger {
     border-radius: 0;
     font-weight: bold;

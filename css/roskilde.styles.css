@@ -3890,7 +3890,8 @@ div[class^="collection-bg"],
     text-align: center;
   }
 }
-.ding-list-add-button a {
+.pane-content .ding-list-add-button a.trigger,
+.ting-object .field-item .ding-list-add-button a.trigger {
   border-radius: 0;
   font-weight: bold;
   padding: 18px 40px;
