@@ -2474,6 +2474,9 @@ textarea {
 .topbar .topbar-inner .pane-notifications-top-menu .pane-notifications-top-menu {
   margin-top: 49px;
 }
+.topbar .topbar-inner .pane-notifications-top-menu .pane-notifications-top-menu ul li a {
+  color: #c7d650;
+}
 
 .responsive-layout-tablet .pane-notifications-top-menu,
 .responsive-layout-mobile .pane-notifications-top-menu {
