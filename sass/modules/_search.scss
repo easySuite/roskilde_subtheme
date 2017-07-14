@@ -757,3 +757,11 @@ div[class^="collection-bg"],
     text-align: center;
   }
 }
+
+.ding-list-add-button {
+  a {
+    border-radius: 0;
+    font-weight: bold;
+    padding: 18px 40px;
+  }
+}
