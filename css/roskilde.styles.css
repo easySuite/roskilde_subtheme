@@ -3221,7 +3221,7 @@ textarea {
   padding: 0;
 }
 .page-libraries #ding-library-page .opening-hours-week .notice-star {
-  margin-right: -1em !important;
+  margin-right: -1em;
 }
 
 /* Search styles
