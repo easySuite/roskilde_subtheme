@@ -305,3 +305,25 @@
     margin-right: 0;
   }
 }
+
+.page-libraries #ding-library-page {
+  .opening-hours-week .name {
+    width: auto;
+  }
+
+  .opening-hours-week .days .day {
+    font-size: 105%;
+    padding: 8px 6px;
+  }
+
+  .libraries-opening-hours {
+    padding-left: 0;
+    .opening-hours-week {
+      padding: 0;
+    }
+  }
+
+  .opening-hours-week .notice-star {
+    margin-right: -1em;
+  }
+}

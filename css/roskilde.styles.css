@@ -3207,6 +3207,23 @@ textarea {
     margin-right: 0;
   }
 }
+.page-libraries #ding-library-page .opening-hours-week .name {
+  width: auto;
+}
+.page-libraries #ding-library-page .opening-hours-week .days .day {
+  font-size: 105%;
+  padding: 8px 6px;
+}
+.page-libraries #ding-library-page .libraries-opening-hours {
+  padding-left: 0;
+}
+.page-libraries #ding-library-page .libraries-opening-hours .opening-hours-week {
+  padding: 0;
+}
+.page-libraries #ding-library-page .opening-hours-week .notice-star {
+  margin-right: -1em;
+}
+
 /* Search styles
    ========================================================================== */
 .pane-ding-facetbrowser .form-wrapper {
