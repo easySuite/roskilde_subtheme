@@ -3914,6 +3914,11 @@ div[class^="collection-bg"],
   padding: 18px 40px;
 }
 
+.dlab-breakout-button li > span,
+.dlab-breakout-button li a {
+  width: 210px;
+}
+
 /* Ding nodelist styles
    ========================================================================== */
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news.dark-blue h3,
