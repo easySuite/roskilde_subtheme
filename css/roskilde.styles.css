@@ -1895,6 +1895,17 @@ table tbody:first-child tr:first-child td:first-child {
   padding: 20px 0;
 }
 
+ul.bottom-links li:first-child {
+  margin-right: 15px;
+}
+ul.bottom-links li {
+  display: inline-block;
+}
+
+.page-list .ting-object .field-name-ting-title h2 {
+  max-width: 350px;
+}
+
 /* Layout styles
    ========================================================================== */
 /* Layouts

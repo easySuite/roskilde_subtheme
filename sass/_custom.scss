@@ -387,3 +387,21 @@ table tbody:first-child tr:first-child td:first-child {
   margin-bottom: 0;
   padding: 20px 0;
 }
+
+ul.bottom-links {
+  li:first-child {
+    margin-right: 15px;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.page-list {
+  .ting-object {
+    .field-name-ting-title h2 {
+      max-width: 350px;
+    }
+  }
+}
