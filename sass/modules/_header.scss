@@ -3,6 +3,8 @@
 $zen-columns:             12;
 $zen-gutters:             20px;
 
+$tablet: "(min-width: 940px) and (max-width: 1048px)";
+
 .topbar-menu {
   .menu-item {
     color: $green;
@@ -109,9 +111,13 @@ $zen-gutters:             20px;
   padding-left: 0;
   padding-right: 0;
   width: auto;
-  
-  @include small-medium() {
-    margin-top: 40px;
+}
+
+.logged-in{
+  .topbar .secondary-menu-wrapper {
+    @media #{$tablet}  {
+      margin: -35px 321px 0 0;
+    }
   }
 }
 
@@ -267,9 +273,8 @@ textarea {
 
     li:first-child:nth-last-child(6),
     li:first-child:nth-last-child(6) ~ li {
-      //display: inline-block;
       float: left;
-      width: calc(100% / 6 - 10px);
+      width: calc(100% / 6 - 15px);
       @include small-medium() {
         width: inherit;
         a {
@@ -281,7 +286,6 @@ textarea {
 
     li:first-child:nth-last-child(7),
     li:first-child:nth-last-child(7) ~ li {
-      //display: inline-block;
       float: left;
       width: calc(100% / 7 - 10px);
       @include small-medium() {
@@ -334,13 +338,10 @@ textarea {
   }
 
  .topbar-inner .pane-notifications-top-menu {
-     @include zen-grid-item(2, 0, left);
-     width: auto;
-     margin-left: -38px;
+    position: absolute;
+    right: -166px;
 
    .pane-notifications-top-menu {
-      margin-top: 49px;
-
       ul li a {
         color: #c7d650;
       }

@@ -2243,10 +2243,10 @@ ul.bottom-links li {
   padding-right: 0;
   width: auto;
 }
-@media only screen and (max-width: 768px) {
-  .secondary-menu-wrapper,
-  .topbar-menu {
-    margin-top: 40px;
+
+@media (min-width: 940px) and (max-width: 1048px) {
+  .logged-in .topbar .secondary-menu-wrapper {
+    margin: -35px 321px 0 0;
   }
 }
 
@@ -2407,7 +2407,7 @@ textarea {
 .main-menu-wrapper ul.main-menu li:first-child:nth-last-child(6),
 .main-menu-wrapper ul.main-menu li:first-child:nth-last-child(6) ~ li {
   float: left;
-  width: calc(100% / 6 - 10px);
+  width: calc(100% / 6 - 15px);
 }
 @media only screen and (max-width: 768px) {
   .main-menu-wrapper ul.main-menu li:first-child:nth-last-child(6),
@@ -2470,20 +2470,8 @@ textarea {
   display: inline-block;
 }
 .topbar .topbar-inner .pane-notifications-top-menu {
-  float: left;
-  width: 16.66667%;
-  margin-left: -8.33333%;
-  margin-right: -100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: auto;
-  margin-left: -38px;
-}
-.topbar .topbar-inner .pane-notifications-top-menu .pane-notifications-top-menu {
-  margin-top: 49px;
+  position: absolute;
+  right: -166px;
 }
 .topbar .topbar-inner .pane-notifications-top-menu .pane-notifications-top-menu ul li a {
   color: #c7d650;
@@ -4185,6 +4173,7 @@ div[class^="collection-bg"],
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news .nb-news-body {
   padding: 10px;
   width: calc(100% - 20px);
+  opacity: 0.8;
 }
 .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.ding_news h3 {
   max-height: 110px;
